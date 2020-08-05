@@ -1,0 +1,133 @@
+.uploadifyQueue
+{
+	width: 625px;
+}
+.uploadifyQueueItem a
+{
+	font-size: 12px;
+	text-decoration: none;
+	color: #2779AA !important;
+}
+.uploadifyQueueItem a:hover
+{
+	text-decoration: underline;
+}
+.uploadifyQueueItem:first-child
+{
+	margin-top: 0px;
+}
+.uploadifyQueueItem
+{
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #D6D6D6;
+	background-color: #FFFFFF;
+	line-height: 17px !important;
+}
+.uploadedImage
+{
+	border: none;
+	max-width: 438px;
+}
+.uploadedThumbnail
+{
+	border: none;
+	max-width: 200px;
+}
+.afterUploadThumbnail
+{
+	display: block;
+}
+.cancel
+{
+	float: right;
+	margin-left: 5px;
+}
+.uploadifyProgress
+{
+	background-color: #FFFFFF;
+	border-color: #808080 #C5C5C5 #C5C5C5 #808080;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 10px;
+	width: 100%;
+}
+.uploadifyProgressBar
+{
+	background-color: #869FB7;
+	height: 3px;
+	width: 1px;
+}
+.uploadButton
+{
+	width: 110px;
+	margin-top: 10px;
+}
+.button_cancel
+{
+	width: 10px;
+	height: 10px;
+	background: transparent url("close.png") no-repeat scroll 0 0;
+	border: none;
+	cursor: pointer;
+	padding: 0px;
+	margin-bottom: 0px !important;
+	margin-top: 4px !important;
+	line-height: 1 !important;
+}
+/*--- misc ---*/
+.uploadifyQueue:after
+{
+    font-size: 0px;
+    content: ".";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+    clear: both;
+}
+.amu_info
+{
+	display: none;
+	clear: both;
+	border: 1px solid #c8c8c8;
+	background-color: #e2e2e2;
+	-moz-border-radius: 10px;
+	-moz-box-shadow: 3px 3px 20px #e2e2e2;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 20px #e2e2e2;
+	border-radius: 10px;
+	box-shadow: 3px 3px 20px #e2e2e2;
+	padding: 10px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 150%;
+}
+.amu_info.amu_message
+{
+	border-color: #6bba45;
+	background-color: #a6e886;
+}
+.amu_info.amu_error
+{
+	border-color: #c83348;
+	background-color: #ec7f7f;
+}
+.amu_loader
+{
+	display: none;
+	margin-left: 15px;
+}
+#wp-amu_content-editor-tools
+{
+	display: none;
+}
+#editorcounter.limitexceeded
+{
+	color: red;
+}
+#amu_content_path_row
+{
+	display: none;
+}
+

@@ -1,0 +1,90 @@
+<h2>Example 1 - auto upload and multi upload</h2>
+Features:
+<ul>
+<li>upload files automatically (without the need to push the upload button)</li>
+<li>upload multiple files at once (you can select more than one file in "browse file" window)</li>
+<li>file size limit - 200 kB</li>
+</ul>
+
+[ajax_multi_upload startOn='auto' multi='true' maxSize='204800']
+Implementation - just use the shorcode:
+<pre>&#91;ajax_multi_upload startOn='auto' multi='true' maxSize='204800'&#93;</pre>
+<h2>Example 2 - upload single file</h2>
+Features:
+<ul>
+<li>upload file manually (after press the upload button)</li>
+<li>set upload button caption</li>
+<li>show image preview after upload</li>
+<li>file extension filter</li>
+<li>allow remove after upload</li>
+<li>file size limit - 200 kB</li>
+</ul>
+
+[ajax_multi_upload startOn='manually' buttonCaption='Upload' afterUpload='image' fileExt='jpg,jpeg,png,gif' fileDesc='Images (*.jpg, *.jpeg, *.png, *.gif)' allowRemove='true' maxSize='204800']
+Implementation:
+<pre>&#91;ajax_multi_upload startOn='manually' buttonCaption='Upload' afterUpload='image' fileExt='jpg,jpeg,png,gif' fileDesc='Images (*.jpg, *.jpeg, *.png, *.gif)' allowRemove='true' maxSize='204800'&#93;</pre>
+<h2>Example 3 - thumbnails</h2>
+Features:
+<ul>
+<li>create 3 thumbnails at once for each image</li>
+<li>set thumbnails dimensions</li>
+<li>set thumbnails crop parameter</li>
+<li>set after upload parameter for each thumbnail</li>
+<li>show file name after upload</li>
+<li>file size limit - 200 kB</li>
+</ul>
+
+[ajax_multi_upload startOn='auto' multi='true' afterUpload='filename' fileExt='jpg,jpeg,png,gif' fileDesc='Images (*.jpg, *.jpeg, *.png, *.gif)' thumbnails='90x90,100x,x50' thumbnailsCrop='true,false,false' thumbnailsAfterUpload='image,image,image' maxSize='204800']
+Implementation:
+<pre>&#91;ajax_multi_upload startOn='auto' multi='true' afterUpload='filename' fileExt='jpg,jpeg,png,gif' fileDesc='Images (*.jpg, *.jpeg, *.png, *.gif)' thumbnails='90x90,100x,x50' thumbnailsCrop='true,false,false' thumbnailsAfterUpload='link,image,image' maxSize='204800'&#93;</pre>
+<h2>Example 4 - integration with form</h2>
+Features:
+<ul>
+<li>upload start on form submition</li>
+<li>show upload speed instead of percentage</li>
+<li>file size limit - 200 kB</li>
+</ul>
+
+<form id="form" method="post" action="/quanticawp/formProcessor.php"><p><div>Name:</div><input type="text" name="name" /><div>Surname:</div><input type="text" name="surname" /><br/>[ajax_multi_upload startOn='onSubmit:form' onProgress='speed' multi='true' afterUpload='filename' maxSize='204800']<input type="submit" value="Submit" /></p></form>Implementation:
+<pre>&lt;form id='form' method='post' action='/quanticawp/formProcessor.php'&gt;
+	&lt;p&gt;
+	&lt;div&gt;Name:&lt;/div&gt;&lt;input type='text' name='name' /&gt;
+	&lt;div&gt;Surname:&lt;/div&gt;&lt;input type='text' name='surname' /&gt;&lt;br /&gt;
+	&#91;ajax_multi_upload startOn='onSubmit:form' onProgress='speed' multi='true' afterUpload='filename' maxSize='204800'&#93;
+	&lt;input type="submit" value="Submit" /&gt;
+	&lt;/p&gt;
+&lt;/form&gt;</pre>
+<h2>Example 5 - integration with form - ajax</h2>
+Features:
+<ul>
+<li>upload start on form submition</li>
+<li>submittion via ajax (without page reload)</li>
+<li>display message after submission</li>
+<li>display loader during submission</li>
+<li>file size limit - 200 kB</li>
+</ul>
+
+<form id="formAjax" method="post" action="/quanticawp/formProcessorAjax.php"><div class="amu_info" id="info"></div><p><div>Name:</div><input type="text" name="name" /><div>Surname:</div><input type="text" name="surname" /><br/>[ajax_multi_upload startOn='onSubmit:formAjax' ajax='true' ajaxInfoId='info' ajaxLoaderId='loader' multi='true' afterUpload='filename' maxSize='204800']<input type="submit" value="Submit" /><span class="amu_loader" id="loader"><img src='/quanticawp/wp-content/plugins/ajax_multi_upload/ajax-loader.gif'/></span></p></form>Implementation:
+<pre>&lt;form id="formAjax" method="post" action="/quanticawp/formProcessorAjax.php"&gt;
+	&lt;p&gt;
+	&lt;div class="amu_info" id="info"&gt;&lt;/div&gt;
+	&lt;div&gt;Name:&lt;/div&gt;&lt;input type="text" name="name" /&gt;
+	&lt;div&gt;Surname:&lt;/div&gt;&lt;input type="text" name="surname" /&gt;&lt;br/&gt;
+	&#91;ajax_multi_upload startOn='onSubmit:formAjax' ajax='true' ajaxInfoId='info' ajaxLoaderId='loader' multi='true' afterUpload='filename' maxSize='204800'&#93;
+	&lt;input type="submit" value="Submit" /&gt;
+	&lt;span class="amu_loader" id="loader"&gt;
+		&lt;img src='/quanticawp/wp-content/plugins/ajax_multi_upload/ajax-loader.gif'/&gt;
+	&lt;/span&gt;
+	&lt;/p&gt;
+&lt;/form&gt;</pre>
+<h2>Example 6 - custom upload button and passing custom data to upload script</h2>
+Features:
+<ul>
+<li>custom upload button</li>
+<li>passing data to upload script</li>
+<li>file size limit - 200 kB</li>
+</ul>
+
+[ajax_multi_upload startOn='auto' multi='true' afterUpload='link' button='/quanticawp/wp-content/plugins/ajax_multi_upload/custom_button.png' bwidth='100' bheight='30' data='"variable1":"5", "variable2":"10"' maxSize='204800']
+Implementation:
+<pre>&#91;ajax_multi_upload startOn='auto' multi='true' afterUpload='link' button='/quanticawp/wp-content/plugins/ajax_multi_upload/custom_button.png' bwidth='100' bheight='30' data='"variable1":"5", "variable2":"10"' maxSize='204800'&#93;</pre>

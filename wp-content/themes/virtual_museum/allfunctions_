@@ -1,0 +1,96 @@
+<?php
+$hero = get_field('hero');
+
+if( $hero ): ?>
+	<div id="hero">
+		<img src="<?php echo $hero['image']['url']; ?>" alt="<?php echo $hero['image']['alt']; ?>" />
+		<div class="content">
+			<?php echo $hero['caption']; ?>
+			<a href="<?php echo $hero['link']['url']; ?>"><?php echo $hero['link']['title']; ?></a>
+		</div>
+	</div>
+	<style type="text/css">
+		#hero {
+			background: <?php echo $hero['color']; ?>;
+		}
+	</style>
+<?php endif; ?>
+
+<!--//======================================================================
+	<?php while( have_rows('Section') ): the_row();
+
+		// vars
+		$image = get_sub_field('Bild');
+		$bildtext = get_sub_field('Bildtext');
+		$audio = get_sub_field('audio');
+    $class = get_sub_field('klasse');
+    $ID = get_sub_field('ID');
+		?>
+
+	<section id="<?php echo $ID ?>"
+    class="<?php echo $class; ?>"
+    style="background-image: url(<?php echo $image['url']; ?>)"
+    alt="<?php echo $image['alt'] ?>">
+
+    <div class="TextBlock">
+      <P>
+			<?php if( $bildtext ): ?>
+				<?php $bildtext ?>
+			<?php endif; ?>
+      </p>
+    </div>
+
+
+			<?php if( $audio ): ?>
+				<div class="audio">
+          <audio preload="auto" loop src="/audio/choir.mp3" type="audio/mp3">
+            <?php $audio ?>
+          </audio>
+        </div>
+			<?php endif; ?>
+
+		    <?php echo $content; ?>
+
+</section>
+	<?php endwhile; ?>
+<?php endif; ?>
+-->
+
+<?php
+
+// check if the repeater field has rows of data
+if( have_rows('Section') ):
+
+ 	// loop through the rows of data
+    while ( have_rows('repeater_field_name') ) : the_row();
+
+        // display a sub field value
+        the_sub_field('sub_field_name');
+
+    endwhile;
+
+else :
+
+    // no rows found
+
+endif;
+
+?>
+
+
+
+
+<?php
+
+$section = get_field('section');
+
+ if( $section ): ?>
+  <section id="<?php echo $section['id']; ?>">
+    <img src="<?php echo $section['image']['url']; ?>" alt="<?php echo $section['image']; ?>" />
+    <div class="TextBlock">
+        <p>
+          <?php echo $section['bildtext']; ?>
+        </p>
+    </div>
+  </section>
+  <?php endif; ?>

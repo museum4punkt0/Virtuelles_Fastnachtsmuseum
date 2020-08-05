@@ -1,0 +1,50 @@
+//Custom Colors for the virtual Museum Theme
+
+$color__grey_dark: #7f7f7f;
+$color__grey_medium: #d3d3d3;
+$color__grey_light: #f2f2f2;
+
+$color__black_dark: #252525;
+$color__black_medium: #31302e;
+$color__black_light: #4a4846;
+
+$color__blue_dark: #1d232c;
+$color__blue_medium: #373F49;
+$color__blue_light: #535D6B;
+
+$color__gold_dark: #473d1a;
+$color__gold_medium: #65561a;
+$color__gold_light: #9b8f5b;
+
+$color__orange_dark: #5a421c;
+$color__orange_medium: #a27a34;
+$color__orange_light: #cbb691;
+
+//----
+
+$color__background-body: $color__black_dark;
+$color__background-screen: $color__black_medium;
+$color__background-hr: #ccc;
+$color__background-button: $color__orange_medium;
+$color__background-pre: $color__black_medium;
+$color__background-ins: $color__grey_medium;
+$color__main_screen: $color__blue_dark;
+
+$color__text-screen: $color__grey_medium;
+$color__text-input: $color__grey_dark;
+$color__text-input-focus: $color__blue_dark;
+$color__link: $color__orange_medium;
+$color__link-visited: $color__orange_medium;
+$color__link-hover: $color__grey_medium;
+$color__text-main: $color__grey_light;
+
+$color__border-button: #65561a #65561a #473d1a;
+$color__border-button-hover: #65561a #65561a #5a421c;
+$color__border-button-focus: #65561a #5a421c #5a421c;
+$color__border-input: $color__gold_dark;
+$color__border-abbr: $color__gold_dark;
+
+$color__background-main-rgb: 162, 122, 52;
+
+
+$color__instruments: $color__link;

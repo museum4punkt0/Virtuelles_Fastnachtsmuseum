@@ -1,0 +1,541 @@
+# Translation of Plugins - ARVE Advanced Responsive Video Embedder - Development (trunk) in German
+# This file is distributed under the same license as the Plugins - ARVE Advanced Responsive Video Embedder - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-03-20 08:51:49+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - ARVE Advanced Responsive Video Embedder - Development (trunk)\n"
+
+#: shared/functions-shared.php:288
+msgid "ogv file"
+msgstr "ogv Datei"
+
+#: shared/functions-shared.php:275
+msgid "webm file"
+msgstr "webm Datei"
+
+#: shared/functions-shared.php:262
+msgid "mp4 file"
+msgstr "mp4 Datei"
+
+#: public/functions-validation.php:29
+msgid "Aspect ratio <code>%s</code> is not valid"
+msgstr "Seitenverhältnis von <code>%s</code> ist inkorrekt."
+
+#: admin/functions-licensing.php:567
+msgid "Your license key expired on %s."
+msgstr "Deine Lizenz läuft am %s ab."
+
+#: admin/functions-licensing.php:553 admin/functions-licensing.php:600
+msgid "An error occurred, please try again."
+msgstr "Ein Fehler ist aufgetreten, bitte versuch es nochmal."
+
+#: admin/functions-licensing.php:595
+msgid "Your license key has reached its activation limit."
+msgstr "Lizenz hat das Aktivierungslimit erreicht."
+
+#: admin/functions-licensing.php:590
+msgid "This appears to be an invalid license key for %s."
+msgstr "Es scheint ein falscher Lizenzkey für %s zu sein."
+
+#: admin/functions-licensing.php:585
+msgid "Your license is not active for this URL."
+msgstr "Lizenz ist nicht aktive für diese URL."
+
+#: admin/functions-licensing.php:579
+msgid "Invalid license."
+msgstr "Falsche Lizenz."
+
+#: admin/functions-licensing.php:574
+msgid "Your license key has been disabled."
+msgstr "Lizenz Key wurde deaktiviert."
+
+#: public/functions-shortcodes.php:59
+msgid "id and provider shortcodes attributes are mandatory for old shortcodes. It is recommended to switch to new shortcodes that need only url"
+msgstr "id und provider shortcode Attribute müssen für die alten Shortcodes gesetzt sein. Es ist empfehlenswert auf den neuen [arve] Shortcodes zu wechseln der nur die URL braucht."
+
+#: public/functions-shortcode-filters.php:76
+msgid "The [arve] shortcode needs one of this attributes %s"
+msgstr "Der [arve] Shortcode braucht eins von diese Attributen %s"
+
+#: admin/functions-licensing.php:526
+msgid "<strong>%1$s %2$s</strong> is available. <a href=\"%3$s\" class=\"thickbox\" title=\"%4s\">Check out what's new</a> or <a href=\"%5$s\"%6$s>update now</a>."
+msgstr "<strong>%1$s %2$s</strong> ist bereit. <a href=\"%3$s\" class=\"thickbox\" title=\"%4s\">Was is neu</a> oder <a href=\"%5$s\"%6$s>jetzt updaten</a>."
+
+#: admin/functions-licensing.php:525
+msgid "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update."
+msgstr "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update."
+
+#: admin/functions-licensing.php:523
+msgid "Site is inactive."
+msgstr "Website ist inaktiv."
+
+#: admin/functions-licensing.php:522
+msgid "License key is disabled."
+msgstr "Lizenzkey is deaktiviert."
+
+#: admin/functions-licensing.php:521
+msgid "License is inactive."
+msgstr "Lizenz ist inaktiv."
+
+#: admin/functions-licensing.php:520
+msgid "License keys do not match."
+msgstr "Lizenzschlüssel stimmen nicht überein."
+
+#: admin/functions-licensing.php:519
+msgid "License key has expired."
+msgstr "Lizenzschlüssel ist abgelaufen."
+
+#: admin/functions-licensing.php:518
+msgid "License key expired %s."
+msgstr "Lizenzschlüssel ist am %s abgelaufen."
+
+#: admin/functions-licensing.php:517
+msgid "You have %1$s / %2$s sites activated."
+msgstr "Du hast %1$s / %2$s Sites aktiviert."
+
+#: admin/functions-licensing.php:516
+msgid "Lifetime License."
+msgstr "Lebenslange Lizenz."
+
+#: admin/functions-licensing.php:515
+msgid "Expires %s."
+msgstr "Läuft am %s ab."
+
+#: admin/functions-licensing.php:514
+msgid "License key is active."
+msgstr "Lizenzschlüssel ist aktiv."
+
+#: admin/functions-licensing.php:513
+msgid "unlimited"
+msgstr "unbegrenzt"
+
+#: admin/functions-licensing.php:512
+msgid "Renew?"
+msgstr "Erneuern?"
+
+#: admin/functions-licensing.php:511 admin/functions-licensing.php:524
+msgid "License status is unknown."
+msgstr "Lizenz Status ist unbekannt."
+
+#: admin/functions-licensing.php:508
+msgid "License Action"
+msgstr "Lizenz Aktion"
+
+#: admin/functions-licensing.php:507
+msgid "License Key"
+msgstr "Lizenzschlüssel"
+
+#: admin/functions-licensing.php:506
+msgid "Enter your theme license key."
+msgstr "Gib deinen Lizenzschlüssel hier ein."
+
+#: admin/functions-licensing.php:505
+msgid "Theme License"
+msgstr "Theme Lizenz."
+
+#: admin/functions-licensing.php:372
+msgid "Not installed, check it out"
+msgstr "Nicht installiert, mehr Infos hier."
+
+#: admin/functions-licensing.php:364
+msgid "Plugin is installed but not activated"
+msgstr "Plugin ist installiert aber nicht aktiviert."
+
+#: admin/functions-licensing.php:360
+msgid "License Status: "
+msgstr "Lizenz Status: "
+
+#: admin/functions-licensing.php:355
+msgid "Check License"
+msgstr "Lizenz Prüfen"
+
+#: admin/functions-licensing.php:354 admin/functions-licensing.php:509
+msgid "Deactivate License"
+msgstr "Lizenz deaktivieren."
+
+#: admin/functions-licensing.php:353 admin/functions-licensing.php:510
+msgid "Activate License"
+msgstr "Lizenz aktivieren."
+
+#: admin/functions-licensing.php:317
+msgid "is defined (wp-config.php?)"
+msgstr "ist defined (wp-config.php?)"
+
+#: admin/functions-licensing.php:280 admin/functions-licensing.php:281
+#: admin/functions-licensing.php:292
+msgid "Licenses"
+msgstr "Lizenzen"
+
+#: admin/functions-licensing.php:256 admin/functions-licensing.php:257
+msgid "Nextgenthemes"
+msgstr "Nextgenthemes"
+
+#: admin/functions-licensing.php:176
+msgid "Hi there, thanks for your purchase. One last step, please activate your %s <a href=\"%s\">here now</a>."
+msgstr "Hi, danke für deinen Kauf. Ein letzter Schritt zum aktivieren von %s, bitte <a href=\"%s\">hier klicken</a>."
+
+#: admin/functions-admin.php:169
+msgid "Embed Video (ARVE)"
+msgstr "Video Einbetten (ARVE)"
+
+#: admin/functions-admin.php:155
+msgid "This button can open a optional ARVE a Shortcode creation dialog. ARVE needs the <a href=\"%s\">Shortcode UI plugin</a> active for this fuctionality."
+msgstr "Dieser Button kann einen optionalen Dialog zur Shortcode Erstellung öffnen. ARVE benötigt das <a href=\"%s\">Shortcode UI Plugin</a> für diese Funktion."
+
+#: admin/class-edd-sl-plugin-updater.php:396
+msgid "Error"
+msgstr "Fehler"
+
+#: admin/class-edd-sl-plugin-updater.php:396
+msgid "You do not have permission to install plugin updates"
+msgstr "Du hast keine Berechtigung Plugin Updates zu installieren."
+
+#: admin/class-edd-sl-plugin-updater.php:209
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
+msgstr "Es ist eine neue Version von %1$s verfügbar. %2$sSiehe %3$sVersionsdetails%4$s oder %5$supdate jetzt%6$s."
+
+#: admin/class-edd-sl-plugin-updater.php:201
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr "Es ist eine neue Version von %1$s verfügbar. %2$sSiehe %3$sVersionsdetails%4$s."
+
+#: shared/functions-shared.php:282
+msgid ".webm file url for HTML5 video"
+msgstr ".webm Datei URL für HTML5 video"
+
+#: shared/functions-shared.php:269
+msgid ".mp4 file url for HTML5 video"
+msgstr "Datei URL für HTML5 Video"
+
+#: shared/functions-shared.php:257
+msgid "Take over WP's default [video] shortcode for HTML5 files."
+msgstr "Übernehme WP's standard [video] Shortcode für HTML5 Dateien."
+
+#: shared/functions-shared.php:251
+msgid "Take over [video]"
+msgstr "Übernehme [video]"
+
+#: shared/functions-shared.php:246
+msgid "(seconds) This plugin uses WordPress transients to cache video thumbnail URLS. This setting defines how long image URLs from the media Gallery are being stored before running WPs fuctions again to request them. For example: hour - 3600, day - 86400, week - 604800."
+msgstr ""
+"(sekunden) Nutzt WordPress transients zum cachen von Vorschaubild URLs. Hier kann die dauer eingestellt werden bis ein (unter umstanden neues Vorschaubild) von der API eines Providers abgefragt wird.\n"
+"\n"
+"Zum Beispiel: Stunde - 3600, Tag - 86400, Woche - 604800."
+
+#: shared/functions-shared.php:244
+msgid "Image Cache Time"
+msgstr "Bild Cache Zeit"
+
+#: public/functions-validation.php:105
+msgid "Mode: <code>%s</code> is invalid or not supported. Note that you will need the Pro Addon activated for modes other than normal."
+msgstr "Modus: <code>%s</code> Ist falsch oder nicht ünterstützt. Beachte das Du das Pro Addon brauchst für zusätzliche Modi neben 'normal'."
+
+#: public/functions-shortcode-filters.php:340
+msgid "Track kind or language code could not detected from filename"
+msgstr "Track Art oder Ländercode konnte nicht vom Dateinamen erkannt werden"
+
+#: public/functions-shortcode-filters.php:101
+msgid "Element ID could not be build, please report this bug."
+msgstr "Element ID konnte nicht erstellt werden, bitte diesen Bug melden."
+
+#: public/functions-shortcode-filters.php:6
+msgid "<code>%s</code> is not a valid url"
+msgstr "<code>%s</code> is keine korrekte URL"
+
+#: public/functions-shortcode-filters.php:54
+msgid "<code>%s</code> is not a string. Only Strings should be passed to the shortcode function"
+msgstr "<code>%s</code> ist kein string. Die Shortcode Funktion akzeptiert nur Strings."
+
+#: admin/functions-admin.php:157
+msgid "It is perfectly fine to pass on this and <a href=\"%s\">manually</a> write shortcodes or don't use shortcodes at all, but it makes things easier."
+msgstr "Du brauchst das es nicht und kannst Shortcodes <a href=\"%s\">selber schreiben</a> oder sie garnicht nutzen, aber es macht die Dinge einfacher."
+
+#: admin/functions-admin.php:156
+msgid "The \"Shortcake (Shortcode UI)\" plugin also adds What You See Is What You Get functionality to WordPress visual post editor."
+msgstr "Das \"Shortcake (Shortcode UI)\" Plugin fügt auch What You See Is What You Get Funktionalität zum WordPress Visual Editor hinzu."
+
+#: shared/functions-shared.php:101
+msgid "Post the URL of the video here. For %s and any <a href=\"%s\">unlisted</a> video hosts paste their iframe embed codes or its src URL in here (providers embeds need to be responsive)."
+msgstr "URL zu dem Video hier eingeben/pasten. Für %s und alle <a href=\"%s\">ungelifteten</a> Video Hoster bitte den iframe Embed Code oder dessen src URL nehmen (müssen responsive sein)"
+
+#: shared/functions-shared.php:122
+msgid "Right"
+msgstr "Rechts"
+
+#. Author URI of the plugin/theme
+msgid "https://nextgenthemes.com"
+msgstr "https://nextgenthemes.com"
+
+#: public/functions-shortcodes.php:213
+msgid "Options: "
+msgstr "Optionen: "
+
+#: admin/functions-admin.php:93 admin/functions-admin.php:116
+#: public/functions-html-output.php:133
+msgid "ARVE"
+msgstr "ARVE"
+
+#: public/functions-html-output.php:96
+msgid "Video Thumbnail"
+msgstr "Vorschaubild"
+
+#: public/functions-shortcode-filters.php:130
+msgid "Not a valid thumbnail URL or Media ID given"
+msgstr "Keine korrekte Vorschaubild URL oder Media ID"
+
+#: public/functions-thumbnails.php:11
+msgid "No attachment with that ID"
+msgstr "Kein Attachment mit dieser ID"
+
+#: shared/functions-shared.php:475
+msgid "API"
+msgstr "API"
+
+#: shared/functions-shared.php:227
+msgid "provider specific parameters"
+msgstr "Provider spezifische Parameter"
+
+#: shared/functions-shared.php:224
+msgid "Parameters"
+msgstr "Parameter"
+
+#: shared/functions-shared.php:218
+msgid "Custom aspect ratio like 4:3, 21:9 ... Leave empty for default."
+msgstr "Benutzerdefiniertes Seitenverhältnis z.B: 4:3, 21:9. Freilassen für Standardeinstellung."
+
+#: shared/functions-shared.php:215
+msgid "Aspect Ratio"
+msgstr "Seitenverhältnis"
+
+#: shared/functions-shared.php:210
+msgid "In px, Needed! Must be 100+ to work."
+msgstr "In px, wird benötigt. Muss großer als 100 sein um zu Funktionieren."
+
+#: shared/functions-shared.php:202
+msgid "in px - leave empty to use settings"
+msgstr "in px - frei lassen um Einstellung zu verwenden."
+
+#: shared/functions-shared.php:172
+msgid "Upload Date for SEO, ISO 8601 format"
+msgstr "Upload Datum für SEO, ISO 8601 format"
+
+#: shared/functions-shared.php:169
+msgid "Upload Date"
+msgstr "Hochladedatum"
+
+#: shared/functions-shared.php:163
+msgid "Description for SEO"
+msgstr "Beschreibung für SEO"
+
+#: shared/functions-shared.php:160
+msgid "Description"
+msgstr "Beschreibung"
+
+#: shared/functions-shared.php:155
+msgid "Used for SEO, is visible on top of thumbnails in Lazyload modes, is used as link text in link-lightbox mode. The Pro Addon is able to get them from %s automatically."
+msgstr "Wird für SEO benutzt, ist sichtbar über Vorschaubildern in Lazyload Modi, wird als Link Text im Link->Lightbox Mode benutzt. Das Pro Addon kann es von %s automatisch einfügen."
+
+#: shared/functions-shared.php:153
+msgid "Title"
+msgstr "Titel"
+
+#: shared/functions-shared.php:148
+msgid "Preview image for Lazyload modes, always used for SEO. The Pro Addon is able to get them from %s automatically."
+msgstr "Vorschaubild für Lazyload Modi, immer benutzt für SEO. Das Pro Addon ist in der Lage diese von %s automatisch zu holen."
+
+#: shared/functions-shared.php:146 shared/functions-shared.php:147
+msgid "Select Image"
+msgstr "Bild auswählen."
+
+#: shared/functions-shared.php:138
+msgid "Shows a small 'ARVE' link below the videos. Be the most awesome person and help promoting this plugin."
+msgstr "Zeigt einen kleinen 'ARVE' link unter den Videos. Würde mich sehr freuen wenn Du dabei hilft das Plugin auf deiner Seite zu damit ein bisschen Promotion zu geben."
+
+#: shared/functions-shared.php:121
+msgid "Left"
+msgstr "Links"
+
+#: shared/functions-shared.php:120
+msgid "None"
+msgstr "Keine"
+
+#: shared/functions-shared.php:116
+msgid "Alignment"
+msgstr "Ausrichtung."
+
+#: shared/functions-shared.php:111 shared/functions-shared.php:119
+#: shared/functions-shared.php:132 shared/functions-shared.php:181
+msgid "Default (current setting: %s)"
+msgstr "Standard (Aktuelle Einstellung: %s)"
+
+#: shared/functions-shared.php:98
+msgid "Video URL / iframe Embed Code"
+msgstr "Video URL / iframe Embed Code"
+
+#: shared/functions-shared.php:95
+msgid "URL / Embed Code"
+msgstr "URL / Embed Code"
+
+#: admin/functions-admin.php:480
+msgid "This shortcodes exist for backwards compatiblity only. It is not recommended to use them at all, please use the <code>[arve]</code> shortcode. You can change the old shortcode tags here. You may need this to prevent conflicts with other plugins you want to use."
+msgstr "This shortcodes exist for backwards compatiblity only. It is not recommended to use them at all, please use the <code>[arve]</code> shortcode. You can change the old shortcode tags here. You may need this to prevent conflicts with other plugins you want to use."
+
+#: shared/functions-shared.php:128
+msgid "ARVE Link"
+msgstr "ARVE Link"
+
+#: admin/functions-admin.php:234
+msgid "Upload Image"
+msgstr "Bild hochladen"
+
+#. Author of the plugin/theme
+msgid "Nicolas Jonas"
+msgstr "Nicolas Jonas"
+
+#. Description of the plugin/theme
+msgid "Easy responsive video embeds via URL (like WordPress) or Shortcodes. Supports almost anything you can imagine."
+msgstr "Einfache, responsive Video-Einbettungen via URL (wie WordPress) oder Shortcodes. Unterstützt fast alles, was Sie sich vorstellen können."
+
+#. Plugin URI of the plugin/theme
+msgid "https://nextgenthemes.com/plugins/advanced-responsive-video-embedder-pro/"
+msgstr "https://nextgenthemes.com/plugins/advanced-responsive-video-embedder-pro/"
+
+#. #-#-#-#-#  tmp-advanced-responsive-video-embedder.pot (ARVE Advanced
+#. Responsive Video Embedder 8.3.1)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: admin/functions-admin.php:167
+msgid "ARVE Advanced Responsive Video Embedder"
+msgstr "ARVE Advanced Responsive Video Embedder"
+
+#: public/functions-html-output.php:132
+msgid "Embedded with ARVE Advanced Responsive Video Embedder WordPress plugin"
+msgstr "Eingebettet mit ARVE Advanced Responsive Video Embedder WordPress plugin"
+
+#: public/functions-validation.php:64
+msgid "%s <code>%s</code> not valid"
+msgstr "%s <code>%s</code> ist falsch"
+
+#: public/functions-validation.php:83
+msgid "Align <code>%s</code> not valid"
+msgstr "Align <code>%s</code> nicht gültig"
+
+#: public/functions-html-output.php:283
+msgid "<abbr title=\"Advanced Responsive Video Embedder\">ARVE</abbr> Error:"
+msgstr "<abbr title=\"Advanced Responsive Video Embedder\">ARVE</abbr> Fehler:"
+
+#: shared/functions-shared.php:971
+msgid "The Parameter start only takes values in seconds, this will start the video at 1 minute and 1 second"
+msgstr "Der start Parameter startet Videos bei X Sekunden, dieses bei 1 Minute und 1 Sekunde."
+
+#: shared/functions-shared.php:965
+msgid "Testing Youtube Starttimes"
+msgstr "Youtube-Startzeiten testen"
+
+#: shared/functions-shared.php:963
+msgid "Enable annotations and related video at the end (disable by default with this plugin)"
+msgstr "Beschriftung und ähnliche Videos am Ende (Standardmäßig deaktiviert mit diesem Plugin)"
+
+#: shared/functions-shared.php:961
+msgid "Loop a YouTube video"
+msgstr "In Schleife abspielen"
+
+#: shared/functions-shared.php:959
+msgid "Youtube playlist URL inlusive the video to start at. The index part will be ignored and is not needed"
+msgstr "Youtube playlist URL inklusive des Videos wo sie starten soll. The index part wird ignoriert und ist nicht benötigt."
+
+#: shared/functions-shared.php:957
+msgid "URL from youtu.be shortener"
+msgstr "URL von youtu.be KurzURL"
+
+#: shared/functions-shared.php:326
+msgid "Normal"
+msgstr "Normal"
+
+#: shared/functions-shared.php:143
+msgid "Thumbnail"
+msgstr "Vorschaubild"
+
+#: shared/functions-shared.php:123
+msgid "center"
+msgstr "zentriert"
+
+#: shared/functions-shared.php:108
+msgid "Mode"
+msgstr "Modus"
+
+#: shared/functions-shared.php:133 shared/functions-shared.php:136
+#: shared/functions-shared.php:182 shared/functions-shared.php:185
+#: shared/functions-shared.php:255
+msgid "No"
+msgstr "Nein"
+
+#: shared/functions-shared.php:133 shared/functions-shared.php:135
+#: shared/functions-shared.php:182 shared/functions-shared.php:184
+#: shared/functions-shared.php:254
+msgid "Yes"
+msgstr "Ja"
+
+#: admin/functions-admin.php:476
+msgid "Reset This Settings Section"
+msgstr "Diesen Einstellungs-Bereich zurücksetzen"
+
+#: admin/functions-admin.php:474 admin/functions-licensing.php:455
+msgid "Save Changes"
+msgstr "Änderungen speichern"
+
+#: admin/functions-admin.php:462
+msgid "Debug Info"
+msgstr "Debug-Info"
+
+#: admin/functions-admin.php:407
+msgid "Shortcode Tags"
+msgstr "Shortcode-Tags"
+
+#: admin/functions-admin.php:365
+msgid "URL Parameters"
+msgstr "URL-Parameter"
+
+#: shared/functions-shared.php:208
+msgid "Align Maximal Width"
+msgstr "Maximale Breite wenn Ausgerichtet"
+
+#: shared/functions-shared.php:194
+msgid "Optional, if not set your videos will be the maximum size of the container they are in. If your content area has a big width you might want to set this. Must be 100+ to work."
+msgstr "Optional. Wenn nicht eingestellt, werden die Videos die maximale Grösse des Containers haben, in dem sie sich befinden. Wenn Ihr Inhaltsbereich sehr breit ist, möchten Sie diesen Wert vielleicht einstellen. Er muss 100 oder mehr betragen, um zu funktionieren."
+
+#: shared/functions-shared.php:192 shared/functions-shared.php:199
+msgid "Maximal Width"
+msgstr "Maximale Breite"
+
+#: shared/functions-shared.php:187
+msgid "Autoplay videos in normal mode, has no effect on lazyload modes."
+msgstr "Videos im normalen Modus automatisch abspielen. Hat keinen Einfluss auf den Lazyload-Modus."
+
+#: shared/functions-shared.php:177
+msgid "Autoplay"
+msgstr "Autoplay"
+
+#: admin/functions-admin.php:304
+msgid "Main Options"
+msgstr "Haupt-Optionen"
+
+#: admin/functions-admin.php:138
+msgid "Donate"
+msgstr "Spenden"
+
+#: admin/functions-admin.php:134
+msgid "Buy Pro Addon"
+msgstr "Pro-Addon kaufen"
+
+#: admin/functions-admin.php:139
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: admin/functions-admin.php:92 admin/functions-admin.php:115
+msgid "Advanced Responsive Video Embedder Settings"
+msgstr "Advanced Responsive Video Embedder Einstellungen"

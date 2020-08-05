@@ -1,0 +1,268 @@
+#burger{
+  height:42px;
+  width:42px;
+  position: relative;
+  display: inline-block;
+  float:right;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#burger:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}
+
+
+#burger {
+  .burger_line_1, .burger_line_2, .burger_line_3, .burger_circle{
+  stroke: $color__link !important;
+  }
+}
+
+
+#burger:hover{
+    .burger_line_1,.burger_line_2,.burger_line_3, .burger_circle{
+      stroke: $color__link-hover !important;
+      opacity: 1;
+    }
+}
+
+#TopMenu{
+  width: 100%;
+  height: auto;
+  background-color: $color__main_screen;
+  border-bottom: solid 2px $color__link;
+  position: relative;
+}
+
+#TopDownMenu {
+  width: 100%;
+  height: auto;
+  float:left;
+  position: relative;
+  background-color: $color__main_screen;
+  left: 0;
+  display: none;
+  opacity: 0;
+  border-bottom: solid 1px $color__link;
+}
+
+
+.nav,
+.nav a,
+.nav ul,
+.nav li,
+.nav div,
+.nav form,
+.nav input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.nav a { text-decoration: none; }
+
+.nav li { list-style: none; }
+
+.nav {
+    display: flex;
+    position: relative;
+    cursor: default;
+    z-index: 500;
+    margin: 0 auto;
+    left: 50%;
+    transition: translateX(-50%);
+}
+
+/* Menu List */
+.nav > li {
+    display: block;
+    float: left;
+    margin: 0 auto;
+}
+
+#TopDownMenu .nav-column{
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 20px;
+}
+
+#TopDownMenu .nav-column ul li{
+  margin: 3px 3px;
+}
+
+
+
+#TopDownMenu .nav-column h3{
+  border-bottom: 1px solid $color__link;
+  margin: 3px 0px 25px 0px;
+}
+
+
+
+.menu-header-main-menu-container {
+  width: 100%;
+
+  position: relative;
+  z-index: 500;
+  margin: 0 auto;
+
+}
+
+.menu-header-main-menu-container ul{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 20px;
+
+}
+
+.menu-header-main-menu-container ul>li{
+position: relative;
+display: inline-block;
+float: left;
+//width: 25%;
+}
+.menu-header-main-menu-container ul>li>a{
+  float: left;
+  color: $color__text-main;
+  font-size: 1.5rem;
+  font-family: $font_header;
+  border-bottom: 1px solid $color__link;
+//  margin: 3px 0px 25px 0px;
+
+}
+
+.menu-header-main-menu-container ul>li>ul{
+  float: left;
+  font-family: $font__main;
+  border-bottom: 1px solid $color__link;
+  //margin: 3px 0px 25px 0px;
+
+}
+
+.menu li{
+  flex:1;
+}
+
+.menu-header-main-menu-container{
+  display: flex;
+  top: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menu .sub-menu{
+  display: table;
+  border:none;
+  margin: 10px 0;
+}
+
+.menu .sub-menu li{
+  width: 100%;
+  display: table-row;
+  padding-left: 10px;
+}
+
+.menu .sub-menu li a{
+  color: $color__link;
+  font-size: 1rem;
+  font-family: $font__main;
+  border:none;
+}
+
+.menu .sub-menu li a:hover{
+  color: $color__text-main;
+  font-size: 1rem;
+  font-family: $font__main;
+}
+li.menu-header>a:first-of-type{
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
+.menu-not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  a{
+  color: $color__grey_dark !important;}
+}
+
+#MenuWrapper{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 999;
+  margin-top: 0;
+}
+
+#burger.closeSub line.burger_line_3{
+  transform-origin: center;
+  @include animation-name(Line3);
+  @include animation-duration(0.3s);
+  @include animation-delay(0.15s);
+  @include animation-fill-mode(forwards);
+  opacity: 1;
+}
+#burger.closeSub line.burger_line_1{
+  transform-origin: center;
+  @include animation-name(Line1);
+  @include animation-duration(0.3s);
+  @include animation-delay(0.15s);
+  @include animation-fill-mode(forwards);
+  opacity: 1;
+}
+
+#burger.closeSub line.burger_line_2{
+  transform-origin: center;
+  opacity: 1;
+  @include animation-name(Line2);
+  @include animation-duration(0.5s);
+  @include animation-delay(0s);
+  @include animation-fill-mode(forwards);
+  opacity: 1;
+}
+
+.custom-logo-link{
+    max-width: 50%;
+    height:auto;
+    display:inline-block !important;
+          float:left;
+    img{
+      max-height: 64px;
+      width:auto;
+
+    }
+}
+/*--------------------------------------------------------------
+keyframes for burgeranimation
+--------------------------------------------------------------*/
+@keyframes Line1 {
+    to {
+      @include translateAndRotate(-2.5px, 3px, 45deg);
+    }
+}
+
+@keyframes Line2 {
+    to {
+      @include translate(-5px, 0px);
+      opacity: 0;
+    }
+}
+
+@keyframes Line3 {
+    to {
+    @include translateAndRotate(-2.5px, -3px, -45deg);
+  }
+}

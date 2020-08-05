@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Scroll Magic - Documentation</title>
+	<link rel="stylesheet" href="assets/css/doc.css">
+	<link rel="shortcut icon" type="image/png" href="assets/imgs/logo.png"/>
+	<link rel="shortcut icon" type="image/png" href="assets/imgs/logo.png"/>
+</head>
+
+<body>
+	<div class="header">
+		<div class="nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Logo Image -->
+						<a target="_blank" href="https://codecanyon.net/user/bestbug/portfolio"  class="logo-image"><img src="assets/imgs/logo.png" alt="logo"></a>
+						<!-- End of Logo Image -->
+					</div>
+					<div class="col-md-9 col-sm-6 col-xs-6">
+						<!-- Menu -->
+						<nav>
+							<ul>
+								<li>
+									<a target="_blank" href="https://codecanyon.net/user/bestbug/portfolio">
+									Products
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://codecanyon.net/user/bestbug">
+									About us
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="mailto:bestbug.com@gmail.com">
+									Contact
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.messenger.com/t/bestbug.official">
+									Support
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- End of Menu -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h1 class="page-title">Scroll Magic</h1>
+			<h2 class="page-description">A plugin for magical scroll interactions.</h2>
+		</div>
+	</div>
+
+	<div id="content" class="container">
+		<div class="layout with-left-sidebar js-layout">
+			<div class="row">
+				<div class="col-md-3 hidden-sm hidden-xs">
+					<div class="sidebar">
+						<nav class="menu-vertical-wrapper">
+							<ul class="menu-vertical">
+								<li class="has-children" data-scroll="General">
+									<a href="#">General</a>
+									<span class="expand"></span>
+									<ul>
+										<li class="has-children" data-scroll="Introduction">
+											<a href="#">Introduction</a>
+										</li>
+										<li data-scroll="WordPress-Information">
+											<a href="#">WordPress Information</a> 
+										</li>
+										<li data-scroll="Download-Plugin-Package">
+											<a href="#">Download Plugin Package</a>
+										</li>
+										<li data-scroll="Requirement-for-Plugin">
+											<a href="#">Requirement for Plugin</a>
+										</li>
+										<li data-scroll="Release-log">
+											<a href="#">Release log</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-children" data-scroll="Installation">
+									<a href="#">Installation</a>
+									<span class="expand"></span>
+									<ul> 
+										<li data-scroll="Install-Plugins">
+											<a href="#">Install Plugins</a>
+										</li>
+										<li data-scroll="Import-Sample-Data">
+											<a href="#">Import Sample Data</a>
+										</li>
+										<li data-scroll="Update-plugins">
+											<a href="#">Update plugins</a>
+										</li>
+									</ul>
+								</li>
+								<li class="has-children" data-scroll="How-to-use">
+									<a href="#">How to use?</a>
+									<span class="expand"></span>
+									<ul>
+										<li class="has-children" data-scroll="Plugin-Settings">
+											<a href="#">Plugin Settings</a>
+										</li>
+										<li class="has-children" data-scroll="Scenes">
+											<a href="#">Scenes</a>
+											<span class="expand"></span>
+											<ul>
+												<li data-scroll="Create-Scene"><a href="#">Create Scene</a></li>
+												<li data-scroll="Scenes-Management"><a href="#">Scenes Management</a></li>
+												<li data-scroll="Apply-Scene"><a href="#">Apply Scene</a></li>
+												<li data-scroll="Image-Sequence"><a href="#">Image Sequence</a></li>
+												<li data-scroll="Draw-SVG"><a href="#">Draw SVG</a></li>
+												
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="has-children" data-scroll="Examples">
+									<a href="#">Examples</a>
+								</li>
+								<li class="has-children" data-scroll="FAQs">
+									<a href="#">FAQs</a>
+									<span class="expand"></span>
+									<ul>
+										<li class="has-children" data-scroll="Support-WPBakery-Page-Builder">
+											<a href="#">Support WPBakery Builder</a>
+										</li>
+										<li class="has-children" data-scroll="Support-KingComposer">
+											<a href="#">Support KingComposer</a>
+										</li>
+										<li class="has-children" data-scroll="Support-Elementor">
+											<a href="#">Support Elementor</a>
+										</li>
+										<li class="has-children" data-scroll="Support-Other-Builders">
+											<a href="#">Support Other Builders</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- end col-md-3 -->
+				
+				<div class="col-md-9">
+					
+					@@include('general.html', {"plugin_name": "Scroll Magic"})
+					@@include('installation.html', {"plugin_name": "Scroll Magic"})
+					@@include('howtouse.html')
+					@@include('examples.html')
+					@@include('faqs.html')
+					
+				</div>
+				<!-- end col-md-9 -->
+			</div>
+		</div>
+	</div> 
+
+	<footer class="footer-container">
+		<!-- Footer Default -->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-12">
+						<div class="footer-logo-wrapper">
+							<!-- Logo Image -->
+							<a target="_blank" href="https://codecanyon.net/user/bestbug/portfolio"  class="logo-image"><img src="assets/imgs/logo.png" alt="logo"></a>
+							<!-- End of Logo Image -->
+							<!-- Slogan -->
+							<p class="slogan">
+								Make <br>The World <br>Better
+							</p>
+							<!-- End of Slogan -->
+						</div>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-12">
+						<div class="footer-wrapper">
+							<ul class="footer-menu helper right">
+								<li>
+									<a target="_blank" href="https://codecanyon.net/user/bestbug/portfolio">
+									Products
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://codecanyon.net/user/bestbug">
+									About us
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="mailto:bestbug.com@gmail.com">
+									Contact
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.messenger.com/t/bestbug.official">
+									Support
+									</a>
+								</li>
+							</ul>
+							<p class="copyright helper right">
+								<a target="_blank" href="https://codecanyon.net/user/bestbug/portfolio">BestBug</a>, all rights reserved. 2017 ©
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Footer Default -->
+	</footer>
+	
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/jquery-migrate-1.4.1.min.js"></script>
+	<script src="assets/js/active-scroll.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/doc.js"></script> 
+</body>
+
+</html>

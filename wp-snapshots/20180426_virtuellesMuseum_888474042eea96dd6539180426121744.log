@@ -1,0 +1,80 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 26. April 2018 12:22
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.36
+WORDPRESS:	4.7.10
+PHP INFO:	7.1.4 | SAPI: apache2handler
+SERVER:		Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (256M default) 
+MEMORY STACK: 14MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported 
+FILTERED: [] 
+RESPONSE: Ran from C:/xampp/mysql/bin/mysqldump.exe 
+TABLES: total:40 | filtered:0 | create:40 
+SQL CREATED: 20180426_virtuellesMuseum_888474042eea96dd6539180426121744_database.sql 
+SQL FILE SIZE: 2.45MB (2563801) 
+SQL FILE TIME: 2018-04-26 12:22:39 
+SQL RUNTIME: 0.59 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  C:/xampp/htdocs/wordpress 
+ARCHIVE FILE: 20180426_virtuellesMuseum_888474042eea96dd6539180426121744_archive.zip 
+FILTERS: *ON* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	1.33GB 
+STATS:	Dirs 1,494 | Files 9,941 
+SQL ADDED: 20180426_virtuellesMuseum_888474042eea96dd6539180426121744_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 11435
+    [filename] => C:\xampp\htdocs\wordpress\wp-snapshots\tmp\20180426_virtuellesMuseum_888474042eea96dd6539180426121744_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 1.18GB 
+ARCHIVE RUNTIME: 178.69 sec. 
+MEMORY STACK: 16MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [C:/xampp/htdocs/wordpress/wp-snapshots/tmp/20180426_virtuellesMuseum_888474042eea96dd6539180426121744_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 2.45MB 
+Installer File: 445.91KB 
+Archive File: 1.18GB  
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 230.30 sec.
+PEAK PHP MEMORY USED: 16MB
+DONE PROCESSING => 20180426_virtuellesMuseum 26. April 2018 12:26
+ 

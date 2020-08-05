@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ajax Multi Upload for WordPress\n"
+"POT-Creation-Date: 2017-03-28 16:23+0100\n"
+"PO-Revision-Date: 2017-03-28 16:23+0100\n"
+"Last-Translator: \n"
+"Language-Team: QuanticaLabs\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_n;_x;_ex;_nx;esc_attr__;esc_attr_e;esc_attr_x;"
+"esc_html__;esc_html_e;esc_html_x;_n_noop;_nx_noop\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ajax_multi_upload.php:23
+msgid "Email Default Subject"
+msgstr ""
+
+#: ajax_multi_upload.php:74 post-type-amu-submission.php:18
+msgid "Upload Submissions"
+msgstr ""
+
+#: ajax_multi_upload.php:74
+msgid "Email template"
+msgstr ""
+
+#: ajax_multi_upload.php:108
+msgid " Contact Form Options"
+msgstr ""
+
+#: ajax_multi_upload.php:118
+msgid "Options saved"
+msgstr ""
+
+#: ajax_multi_upload.php:132
+msgid "Admin email config"
+msgstr ""
+
+#: ajax_multi_upload.php:138 post-type-amu-submission.php:98
+msgid "Name"
+msgstr ""
+
+#: ajax_multi_upload.php:146 post-type-amu-submission.php:115
+msgid "Email"
+msgstr ""
+
+#: ajax_multi_upload.php:160
+msgid "Admin SMTP config (optional)"
+msgstr ""
+
+#: ajax_multi_upload.php:166
+msgid "Host"
+msgstr ""
+
+#: ajax_multi_upload.php:174
+msgid "Username"
+msgstr ""
+
+#: ajax_multi_upload.php:182
+msgid "Password"
+msgstr ""
+
+#: ajax_multi_upload.php:190
+msgid "Port"
+msgstr ""
+
+#: ajax_multi_upload.php:198
+msgid "SMTP Secure"
+msgstr ""
+
+#: ajax_multi_upload.php:203
+msgid "ssl"
+msgstr ""
+
+#: ajax_multi_upload.php:204
+msgid "tls"
+msgstr ""
+
+#: ajax_multi_upload.php:215
+msgid "Email config"
+msgstr ""
+
+#: ajax_multi_upload.php:220
+msgid "Email subject"
+msgstr ""
+
+#: ajax_multi_upload.php:228
+msgid "Template"
+msgstr ""
+
+#: ajax_multi_upload.php:231
+msgid "Available shortcodes:"
+msgstr ""
+
+#: ajax_multi_upload.php:327
+msgid "Default title"
+msgstr ""
+
+#: ajax_multi_upload.php:380
+msgid "The form has beeen send successfully!"
+msgstr ""
+
+#: ajax_multi_upload.php:468
+msgid "Please fill required fields:"
+msgstr ""
+
+#: ajax_multi_upload.php:525
+msgid "-"
+msgstr ""
+
+#: post-type-amu-submission.php:6
+msgid "Ajax Multi Upload Submissions"
+msgstr ""
+
+#: post-type-amu-submission.php:7
+msgid "Submission"
+msgstr ""
+
+#: post-type-amu-submission.php:8
+msgid "Add New"
+msgstr ""
+
+#: post-type-amu-submission.php:9
+msgid "Add New Submission"
+msgstr ""
+
+#: post-type-amu-submission.php:10
+msgid "Edit Submission"
+msgstr ""
+
+#: post-type-amu-submission.php:11
+msgid "New Submission"
+msgstr ""
+
+#: post-type-amu-submission.php:12
+msgid "All Submissions"
+msgstr ""
+
+#: post-type-amu-submission.php:13
+msgid "View Submission"
+msgstr ""
+
+#: post-type-amu-submission.php:14
+msgid "Search Submissions"
+msgstr ""
+
+#: post-type-amu-submission.php:15
+msgid "No submissions found"
+msgstr ""
+
+#: post-type-amu-submission.php:16
+msgid "No submissions found in Trash"
+msgstr ""
+
+#: post-type-amu-submission.php:39
+msgid "Submitted data"
+msgstr ""
+
+#: post-type-amu-submission.php:123
+msgid "Website"
+msgstr ""
+
+#: post-type-amu-submission.php:133
+msgid "Attachments"
+msgstr ""
+
+#: post-type-amu-submission.php:141
+msgid "Edit"
+msgstr ""

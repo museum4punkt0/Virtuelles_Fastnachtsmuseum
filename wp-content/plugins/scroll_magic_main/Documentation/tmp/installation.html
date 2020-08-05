@@ -1,0 +1,86 @@
+<div class="separator"></div>
+
+<div class="head-title">
+    <h3 class="title" id="Installation">Installation</h3>
+</div>
+
+<ul class="steps">
+    <li class="step" id="Install-Plugins">
+        <span class="step-number">+</span>
+        <h4 class="step-title">Install Plugins</h4>
+        <div class="step-content">
+            <p>Extract the package downloaded from Codecanyon, you will get the installable WordPress plugin file called <b>scroll_magic.zip </b>which is located in “Installation Files” folder. Choose one of two ways below to install plugin:</p>
+            <p><strong>Via WordPress</strong>:</p>
+            <ul>
+                <li><strong>Step 1.</strong>&nbsp;Log into your WordPress Admin area.</li>
+                <li><strong>Step 2.</strong>&nbsp;Look down the left-hand column for <strong>“Plugins”</strong> and then click on the word <strong>“Add new”</strong></li>
+                <strong>Step 3.</strong>&nbsp;In the “Add Plugins” page, click <strong>“Upload Plugin”</strong>then click <strong>“Choose File”</strong> to browse for the plugin installation file in <a>[path-to-your-downloaded-package]/Installation File/scroll_magic.zip</a>). Click <strong>“Install Now”.</strong></li>
+            </ul>
+            <p><img src="assets/imgs/doc/install-plugin.png"></p>
+            <ul>
+                <li><strong>Step 5.</strong>&nbsp;After installed successfully, click <strong>“</strong><strong>Activate”</strong> to make the plugin active</li>
+            </ul>
+            
+            <p><strong>Via FTP:</strong></p>
+            <ul>
+                <li><strong>Step 1.&nbsp;</strong>Use your FTP software to browse to <b>“wp-content/plugins</b>&nbsp;folder to install plugins</li>
+                <li><strong>Step 2.&nbsp;</strong>Extract the installation files to their corresponding folders, for example <b><strong>“scroll_magic.zip“</strong></b>&nbsp;to&nbsp;<strong>“</strong><b>scroll_magic<strong>“</strong></b>&nbsp;and upload to server</li>
+                <li><strong>Step 3.&nbsp;</strong>Once it’s uploaded, go to your WordPress Admin, browse to&nbsp;<strong>“</strong><b>Appearance &gt; Plugins<strong>“</strong></b></li>
+                <li><strong>Step 4.&nbsp;</strong>Click <strong>“</strong><b>Activate<strong>“</strong></b>&nbsp;to make the plugin active</li>
+            </ul>
+            
+        </div>
+    </li>
+    
+    <li class="step" id="Import-Sample-Data">
+        <span class="step-number">+</span>
+        <h4 class="step-title">Import Sample Data</h4>
+        <div class="step-content">
+            <p>In <b>/Sample Data/</b> folder, you can find there are:</p>
+            <ul>
+                <li><b>All-Sample-Data.xml</b> - &nbsp;Main Data</li>
+                <li><b>Only-Scenes.xml</b> - &nbsp;Just Scenes Settings Data</li>
+            </ul>
+            <p><em><strong>To import sample data, Please follow these steps:</strong></em></p>
+            <ul>
+                <li><strong>Step 1: &nbsp;</strong>Make sure you have installed @@plugin_name plugin</li>
+                <li><strong>Step 2.</strong> In your WordPress Admin area, look down the left-hand column for <strong>“Tools &gt; Import”</strong> and then click on <b>WordPress</b></li>
+                <li><strong>Step 3:&nbsp;</strong>&nbsp;If it is not yet installed before, you have to install it. On the popup window, click on “<strong>Install Now</strong>“</li>
+                <li><strong>Step 4:&nbsp;</strong>&nbsp;After installed successfully, click on <b>Activate Plugin &amp; Run Importer</b></li>
+                <li><strong>Step 5:&nbsp;</strong>&nbsp;Browse for <a>[path-to-your-downloaded-package]/Installation File/Sample Data/All-Sample-Data.xml</a> and click <b>Upload File and Import</b>.</li>
+                <li><strong>Step 6:&nbsp;</strong>&nbsp;After uploading, the confirmation page appears. Check the <b>Download and import file attachments</b> option and click <b>Submit</b>. If you have trouble with importing (it might breaks in the middle due to long execution time), try again with this option Unchecked! Or, try to import separate files as they are smaller.</li>
+                <li><strong>Step 7:&nbsp;</strong>&nbsp;After uploading, the confirmation page appears. Check the <b>Download and import file attachments</b> option and click <b>Submit</b></li>
+                <li><strong>Step 8:&nbsp;</strong>&nbsp;When you see a message <b>“All done. Have fun!”</b>, you will know that the import is done. NOTE: you may need to re-import the second time if the data is large. Back to Step 1.</li>
+            </ul>
+
+        </div>
+    </li>
+
+    <li class="step" id="Update-plugins">
+        <span class="step-number">+</span>
+        <h4 class="step-title">Update plugins</h4>
+        <div class="step-content">
+            <p><b>Via Wordpress:</b></p>
+            <ul>
+                <li><strong>Step 1:&nbsp;</strong>&nbsp;<b>Deactivate&nbsp; plugin</b> by going to <b>Plugins &gt; Installed plugins</b>.
+                <li><strong>Step 2: &nbsp;</strong><b>Delete older version</b> by clicking on <b>Delete</b> link. Confirm to delete.</li>
+                <li><strong>Step 3</strong>:&nbsp;<b>Update and re-install</b> new version.</li>
+            </ul>
+            <p><b>Auto update:</b></p>
+            <ul>
+                <li><strong>Step 1</strong>: Go to <b>Plugins &gt; Add News &gt; Upload</b>, find and install <b>envato-wordpress-toolkit.zip</b> file ( click <a href="https://github.com/envato/envato-wordpress-toolkit/archive/master.zip" target="_blank"><b>here</b></a> to download)</li>
+                <li><strong>Step 2:</strong> To establish an <b>Envato Marketplace API</b> connection navigate to the Envato Toolkit page and insert your Marketplace username and secret API key in the designated input fields. To obtain your API Key, visit your “My Settings” page on any of the Envato Marketplaces</li>
+                <li><strong>Step 3:</strong> Once the <strong>API connection</strong> has been established you will see a list of plugins that can be auto updated/installed. If you don’t see any plugins and are certain you’ve done everything correct, there is a good chance the plugin author has not updated their plugin to be available for auto install and update. If that’s the case, please contact the plugin author and ask them to update their plugin’s information</li>
+            </ul>
+            <p><b>Via FTP:</b></p>
+            <ul>
+                <li>Unzip the&nbsp;<strong>.zip</strong>&nbsp;files of the plugin.</li>
+                <li>Login to your FTP account and navigate to your WordPress Installation directory</li>
+                <li>Navigate to the folder&nbsp;<strong>/wp-content/plugins</strong></li>
+                <li>Override&nbsp;the folders of these plugins</li>
+            </ul>
+        </div>
+    </li>
+
+</ul>
+<!-- end installation -->

@@ -1,0 +1,31 @@
+$primaryColor: #3498db;
+$successColor: #27ae60;
+$dangerColor: #e74c3c;
+
+@import "editor";
+@import "ranger";
+@import "toggle-switch";
+
+.bb_sm_icon {
+	background: url('../img/bb_sm.png')!important;
+	background-size: cover!important;
+}
+.bb_sm_imagesequence_icon {
+	background: url('../img/imagesequence.png')!important;
+	background-size: cover!important;
+}
+.bb_sm_imagesgroup {
+	background: url('../img/bb_sm_imagesgroup.png')!important;
+	background-size: cover!important;
+}
+.bb_sm_single_image_icon {
+	background: url('../img/bb_sm_single_image_icon.png')!important;
+	background-size: cover!important;
+}
+
+div[data-vc-shortcode-param-name="bbsm_scene"] {
+	.vc_checkbox-label {
+		display: inline-block;
+		width: 45%;
+	}
+}

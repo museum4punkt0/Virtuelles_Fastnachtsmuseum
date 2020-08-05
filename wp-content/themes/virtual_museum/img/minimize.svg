@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #8b7034;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <title>minimize</title>
+  <g id="Ebene_2" data-name="Ebene 2">
+    <g id="Ebene_1-2" data-name="Ebene 1">
+      <line class="cls-1" x1="13" y1="21" x2="29" y2="21"/>
+      <circle class="cls-2" cx="21" cy="21" r="19.5"/>
+    </g>
+  </g>
+</svg>

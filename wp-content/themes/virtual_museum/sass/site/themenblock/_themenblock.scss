@@ -1,0 +1,359 @@
+/*html, body {
+  height: 100%;
+  margin: 0;
+  color: #f4f3f2;
+}
+
+h1 {
+  padding: 20% 0 0 0;
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.9);
+  position: relative;
+}
+
+
+
+a:visited, a:focus, a:active{
+  text-decoration: none;
+  color: $color__link;
+}
+*/
+.ContentTitle{
+  font-size: 4em;
+  color:$color__link;
+  font-family: 'Playfair Display', cursive;
+  letter-spacing: 10px;
+  font-weight: lighter;
+}
+
+#Thementitel{
+width: 100%;
+height: 100vh;
+}
+
+.headerText p{
+  color: $color__link;
+  font-family: $font_header;
+}
+
+.flexyCentered{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+//--------------------------------------------Sidebar-------------------------------//
+html {box-sizing:border-box;}
+*, *:before, *:after {box-sizing:inherit;}
+
+/* CONTAINER */
+.container {width:80%; margin:0; padding:0px 20px 20px 20px;}
+
+/* SIDEBAR NAVIGATION */
+.sidebar {
+  position:absolute;
+  //right:0;
+  font-family: $font__main;
+  font-weight: lighter;
+  text-transform: capitalize;
+
+}
+
+.dot {
+  display:inline-block;
+  width:10px;
+  height:10px;
+  background-image: url(../imgs/svg/passiv.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index:9999;
+  text-align: left;
+  //content:'';
+  color:transparent;
+  font-size:16px;
+  line-height:10px;
+  vertical-align:middle;
+  margin:5px 0 5px 0;
+  font-weight:300;
+}
+
+.dot:hover {
+  //background-color:rgba(255,255,255,.8);
+  background-image: url(../imgs/svg/active.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #f4f3f2;
+  @include transition (all 0.5s ease-in-out);
+  //transform: translateX(2.5px);
+  }
+  //
+.dot:hover span{
+top: 0px;
+}
+
+.dot span {
+  min-width: 150px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin:0px 0px 20px 15px;
+  position:relative;
+  top:0px;
+  left:10px;
+}
+
+.sidebar nav {
+  //width: 2%;
+  height:auto;
+  padding:0 0px;
+  position:fixed;
+  top:15%;
+  left:20px;
+  transform: translate(0, -15%);
+  z-index: 10000;
+  text-align:right;
+}
+
+.sidebar nav ul li a {
+  text-decoration:none;
+}
+.sidebar nav ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+
+
+.name-active {
+  color:rgba(255,255,255,.8);
+  //background-color:#FFD95F;
+  //margin-left:40px;
+  background-image: url(../imgs/svg/active.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height:16px;
+  text-align:left;
+}
+
+.name-active.dot {
+  transform: translateX(20px);
+}
+
+
+//a:hover.dot::before,
+.dot.name-active::before{
+  content:'';
+  height: 14px;
+  background-image: url(../imgs/svg/line.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  left: -70px;
+  top: 0px;
+  width: 70px;
+}
+/* PAGE CONTENT */
+.content {
+  width:100%;
+  text-align:justify;
+}
+
+#soundBox{
+ position: fixed;
+ bottom: 40px;
+ left: 40px;
+ width: 40px;
+ height: auto;
+ z-index: 999;
+ cursor: pointer;
+}
+
+.soundOn{
+display: block;
+}
+.soundOff{
+  display: none;
+}
+//--------------------------------------------End SidebarNav-------------------------------//
+
+.ContentContainer{
+    //padding-top: 80px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+}
+
+
+
+.InfoWrapper{
+    width:30%;
+    display: block;
+    text-align:left;
+    line-height: 1.5rem;
+    position: absolute;
+    p{
+      float: left;
+      width:60%;
+      padding-right:15px;
+    }
+  p::first-letter {
+        text-transform: uppercase;
+        color: $color__link;
+        font-family: 'Playfair-Display', serife;
+        font-size:300%;
+        float: left;
+        padding-top: 6px;
+        padding-right: 5px;
+  }
+}
+
+.InfoWrapper.rightTop{
+  float: right;
+  right:16.66%;
+  top: 30%;
+  transform: translate(0, -30%);
+}
+.InfoWrapper.leftTop{
+  float: left;
+  left:16.66%;
+  top: 30%;
+  transform: translate(0, -30%);
+}
+.InfoWrapper.rightBottom{
+  float: right;
+  right:16.66%;
+  bottom: 30%;
+  transform: translate(0, -30%);
+}
+.InfoWrapper.leftBottom{
+  float: right;
+  left:16.66%;
+  bottom: 30%;
+  transform: translate(0, -30%);
+}
+
+.closeText{
+  position:fixed;
+  left:0;
+  top: 0;
+  transform: translate(-21px, -21px);
+  cursor: pointer;
+  .cls-3 {
+    fill: $color__background-body;
+  }
+}
+.InfoText{
+  float: left;
+  width:100%;
+  background-color: rgba(39, 39, 39, 0.8);
+  border: solid 1px $color__link;
+  padding: 1.5rem;
+}
+
+.sm_image{
+  width: 40%;
+  height: auto;
+  float: right;
+  //margin: 10px;
+  margin: 0;
+
+  figcaption{
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 10px;
+    line-height:1rem;
+    margin-top:2px;
+  }
+}
+
+.closeBox{
+display: none;
+}
+.stayfixed{
+  position: fixed;
+
+}
+
+.audio{
+  position: relative;
+  width: 0px;
+  height: 100px;
+  top: 50%;
+  background-color: white;
+}
+
+
+#lightbeamOverlay{
+position: absolute;
+width:80%;
+height:100%;
+z-index: 999;
+display: none;
+background-image: url(../imgs/lightbeam.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 0% 0%;
+}
+
+
+
+
+main section {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  background-color: #272727;
+//  background-image: url(../imgs/patterns/crossword.png);
+}
+
+/* Center aligned first section */
+section .inner {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+section .image{
+  margin-right: 30%;
+  margin-top: 15%;
+  overflow: hidden;
+
+}
+
+/* Content of the following sections aligned next to the iphone */
+section .innerText {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-100px, -50%);
+  text-align: left;
+}
+
+.backgroundImage{
+    position: relative;
+    width:100%;
+    height:auto;
+    left: 0;
+}
+
+.chapter{
+    width: 100%;
+    height:auto;
+}
+
+.fixedWindow{
+position: fixed;
+height:100vh;
+width:100%;
+border: solid yellow;
+top:0;
+z-index:99;
+//overflow: hidden;
+}

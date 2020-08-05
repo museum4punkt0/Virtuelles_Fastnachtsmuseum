@@ -1,0 +1,243 @@
+<div class="separator"></div>
+
+<div class="head-title">
+    <h3 class="title" id="How-to-use">How to use?</h3>
+</div>
+
+<ul class="steps">
+    <li class="step" id="Plugin-Settings">
+        <span class="step-number">+</span>
+        <h4 class="step-title">Plugin Settings</h4>
+        <div class="step-content">
+            <p>In your WordPress Admin area, look down the left-hand column for <strong>“Scroll Magic &gt; Settings”</strong></p>
+            <p><img src="assets/imgs/doc/plugin-settings.png"></p>
+            <p><strong>Options</strong>:</p>
+            <ul>
+                <li><strong>Mobile mode</strong>: You deactivate ScrollMagic on mobile.</li>
+                <li><strong>SmoothScroll mode</strong>: Smooth scroll on your site.</li>
+            </ul>
+            
+        </div>
+    </li>
+    
+    <li class="step" id="Scenes">
+        <span class="step-number">+</span>
+        <h4 class="step-title">Scenes</h4>
+        <div class="step-content">
+            <p>A Scene is an object include animation, you can apply scene to all elements via CSS class name</p>
+        </div>
+    </li>
+    
+    <li class="step" id="Create-Scene">
+        <span class="step-number">+</span>
+        <h4 class="step-title">Create Scene</h4>
+        <div class="step-content">
+            <p>In your WordPress Admin area, look down the left-hand column for <strong>“Scroll Magic &gt; Add Scene”</strong></p>
+            <p>And with this Scene Builder (Live preview) you can see any thing you change just now.</p>
+            <p><img src="assets/imgs/doc/create-scene.png"></p>
+            
+            <p><b>General Settings</b>:</p>
+            <p><img src="assets/imgs/doc/general-settings.png"></p>
+            <ul>
+                <li><b>General</b>:
+                    <ul>
+                        <li><b>Title</b>: Just title of scene</li>
+                        <li><b>Name ID (Class name)</b>: It's is unique, you can add it likes css Class to elements</li>
+                        <li><b>Reverse</b>: Reverse animations when scroll-up</li>
+                        <li><b>Vertical</b>: Scroll vertical or horizontal</li>
+                        <li><b>TriggerHook</b>: Can be a number between 0 and 1 defining the position of the trigger Hook in relation to the viewport.</li>
+                        <li><b>Duration</b>: The duration of the scene. If 0 tweens will auto-play when reaching the scene start point, pins will be pinned indefinetly starting at the start position.</li>
+                        <li><b>Offset</b>: Offset Value for the Trigger Position.</li>
+                        <li><b>Pin</b>: Pin an element for the duration of the tween.
+If the scene duration is 0 the element will only be unpinned, if the user scrolls back past the start position.
+Make sure only one pin is applied to an element at the same time. An element can be pinned multiple times, but only successively.</li>
+                        <li><b>PushFollowers</b>: has no effect, when the scene duration is 0.</li>
+                    </ul>
+                </li>
+                <li><b>Class</b>:
+                    <ul>
+                        <li><b>Enable</b>: Enable to add class animation css</li>
+                        <li><b>Class CSS</b>: over 75 animations available for you choose</li>
+                    </ul>
+                </li>
+                <li><b>Bezier</b>:
+                    <ul>
+                        <li><b>x</b>: x position of element when scroll</li>
+                        <li><b>y</b>: y position of element when scroll</li>
+                    </ul>
+                </li>
+                <li><b>Ease</b>:
+                    <ul>
+                        <li><b>Duration ease</b>: The animation's duration</li>
+                        <li><b>Delay</b>: The delay's duration</li>
+                        <li><b>Type</b>: You can watch <i>"how to ease works?"</i> in <a href="https://greensock.com/ease-visualizer" target="_blank"><b>here</b></a></li>
+                    </ul>
+                </li>
+                <li><b>Misc</b>:
+                    <ul>
+                        <li><b>Draw SVG</b>: Enable draw SVG</li>
+                        <li><b>Selector</b>: You can apply scene to selectors (jquery Selectors) separated by spacing</li>
+                        <li><b>Container</b>: A scroll container can be any element (usually a div though), that has scrolling happening inside of it.</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <p><b>Before Scrolling</b>:</p>
+            <p><img src="assets/imgs/doc/before.png"></p>
+            <ul>
+                <li><b>Transform</b>:
+                    <ul>
+                        <li><b>TranslateX</b>: Defines a translation, using only the value for the X-axis</li>
+                        <li><b>TranslateY</b>: Defines a translation, using only the value for the Y-axis</li>
+                        <li><b>TranslateZ</b>: Defines a 3D translation, using only the value for the Z-axis</li>
+                        <li><b>ScaleX</b>: Defines a scale transformation by giving a value for the X-axis</li>
+                        <li><b>ScaleY</b>: Defines a scale transformation by giving a value for the Y-axis</li>
+                        <li><b>ScaleZ</b>: Defines a 3D scale transformation by giving a value for the Z-axis</li>
+                        
+                        <li><b>Rotate</b>: Defines a 2D rotation, the angle is specified in the parameter</li>
+                        <li><b>RotateX</b>: Defines a 3D rotation along the X-axis</li>
+                        <li><b>RotateY</b>: Defines a 3D rotation along the Y-axis</li>
+                        <li><b>RotateZ</b>: Defines a 3D rotation along the Z-axis</li>
+                        <li><b>SkewX</b>: Defines a 2D skew transformation along the X-axis</li>
+                        <li><b>SkewY</b>: Defines a 2D skew transformation along the Y-axis</li>
+                    </ul>
+                </li>
+                <li><b>Color</b>:
+                    <ul>
+                        <li><b>Color</b>: The color property specifies the color of text.</li>
+                        <li><b>Background Color</b>: Property sets the background color of an element.</li>
+                        <li><b>Background Attachment</b>: Property sets whether a background image scrolls with the rest of the page, or is fixed.</li>
+                    </ul>
+                </li>
+                <li><b>Position</b>:
+                    <ul>
+                        <li><b>Position</b>: The position property specifies the type of positioning method used for an element (static, relative, absolute or fixed).</li>
+                        <li><b>Top</b>: For absolutely positioned elements, the top property sets the top edge of an element to a unit above/below the top edge of its nearest positioned ancestor. Note: If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. Note: A "positioned" element is one whose position is anything except static.
+
+                        <p>For relatively positioned elements, the top property sets the top edge of an element to a unit above/below its normal position.</p>
+
+                        <p>Note: If "position:static", the top property has no effect. </p></li>
+                        <li><b>Left</b>: For absolutely positioned elements, the left property sets the left edge of an element to a unit to the left/right of the left edge of its nearest positioned ancestor.
+
+                        <p>Note: If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.</p>
+
+                        <p>Note: A "positioned" element is one whose position is anything except static.</p>
+
+                        <p>For relatively positioned elements, the left property sets the left edge of an element to a unit to the left/right to its normal position.</p>
+
+                        <p>Note: If "position:static", the left property has no effect.</p></li>
+                        
+                        <li><b>Bottom</b>: The bottom property specifies the vertical position of a positioned element. This property has no effect on non-positioned elements.
+
+                        <p>If position: absolute; or position: fixed; - the bottom property specifies the distance between the element's bottom edge and the bottom edge of its containing block.</p>
+                        <p>If position: relative; - the bottom property makes the element's bottom edge to move above/below its normal position.</p>
+                        <p>If position: sticky; - the bottom property behaves like its position is relative when the element is inside the viewport, and like its position is fixed when it is outside.</p>
+                        <p>If position: static; - the bottom property has no effect.</p></li>
+                        
+                        <li><b>Right</b>: For absolutely positioned elements, the right property sets the right edge of an element to a unit to the left/right of the right edge of its nearest positioned ancestor. Note: If an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. Note: A "positioned" element is one whose position is anything except static.
+
+                        <p>For relatively positioned elements, the right property sets the right edge of an element to a unit to the left/right to its normal position.</p>
+
+                        <p>Note: If "position:static", the right property has no effect.</p></li>
+                    </ul>
+                </li>
+                <li><b>Misc</b>:
+                    <ul>
+                        <li><b>Width</b>: The width property sets the width of an element.</li>
+                        <li><b>Height</b>: The height property sets the height of an element.</li>
+                        <li><b>Opacity</b>: The opacity property sets the opacity level for an element.
+                            <p>The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent.</p></li>
+                        <li><b>Z-Index</b>: The z-index property specifies the stack order of an element.
+
+                            <p>An element with greater stack order is always in front of an element with a lower stack order.</p>
+
+                            <p>Note: z-index only works on positioned elements (position:absolute, position:relative, or position:fixed).</p></li>
+                        <li><b>Overflow</b>: The overflow property specifies what happens if content overflows an element's box.
+
+                            <p>This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.</p>
+
+                            <p>Note: The overflow property only works for block elements with a specified height.</p></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <p><b>After Scrolling</b>:</p>
+            <p><img src="assets/imgs/doc/after.png"></p>
+            <ul>
+                <li><b>Has properties like Before Scrolling</b></li>
+            </ul>
+        </div>
+    </li>
+    
+    <li class="step" id="Scenes-Management">
+        <span class="step-number">+</span>
+        <h4 class="step-title">Scenes Management</h4>
+        <div class="step-content">
+            
+            <p><img src="assets/imgs/doc/scenes.png"></p>
+            <ul>
+                <li><strong>ID</strong>: ID of scene</li>
+                <li><strong>Scene</strong>: Title of scene</li>
+                <li><strong>CSS Class</strong>: Class ID of scene, you use this class to apply elements</li>
+                <li><strong>Action</strong>: 
+                    <ul>
+                        <li><b>Edit</b>: Go to edit a scene</li>
+                        <li><b>Clone</b>: Clone a scene</li>
+                        <li><b>Remove</b>: Remove a scene</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            
+        </div>
+    </li>
+    
+    <li class="step" id="Apply-Scene">
+        <span class="step-number">+</span>
+        <h4 class="step-title">Apply Scene</h4>
+        <div class="step-content">
+            <p>In your WordPress Admin area, look down the left-hand column for <strong>“Scroll Magic &gt; All Scenes”</strong> and see comlumn CSS Class </p>
+            <p><img src="assets/imgs/doc/get-scene.png"></p>
+            
+            <p>In Page or Post editor you can use ScrollMagic shortcode</p>
+            
+            <p><img src="assets/imgs/doc/apply-scene.png"></p>
+            
+        </div>
+    </li>
+    
+    <li class="step" id="Image-Sequence">
+        <span class="step-number">+</span>
+        <h4 class="step-title">Image Sequence</h4>
+        <div class="step-content">
+            <p>You can upload images and get ids of images</p>
+            <p><img src="assets/imgs/doc/upload-image.png"></p>
+            
+            <p>In Page or Post editor you can use Image Sequence shortcode</p>
+            
+            <p><img src="assets/imgs/doc/imagesequence.png"></p>
+            
+        </div>
+    </li>
+
+    <li class="step" id="Draw-SVG">
+        <span class="step-number">+</span>
+        <h4 class="step-title">Draw SVG</h4>
+        <div class="step-content">
+            
+            <p>This plugin uses the jQuery built-in animation engine to transition the stroke on every <code>&lt;path&gt;</code> inside the selected <code>&lt;svg&gt;</code> element, using stroke-dasharray and stroke-dashoffset properties.</p>
+                
+            <p>The first, you need to install <a href="https://vi.wordpress.org/plugins/svg-support/" target="_blank"><b>SVG Support</b></a> plugin to upload svg file.</p>
+            <p>Then you can upload SVG file and get id of SVG.</p>
+            <p><img src="assets/imgs/doc/upload-svg.png"></p>
+            
+            <p><img src="assets/imgs/doc/svg-shortcode.png"></p>
+            
+            <p>In Page or Post editor you can use SVG shortcode</p>
+            
+        </div>
+    </li>
+
+</ul>
+<!-- end installation -->
+

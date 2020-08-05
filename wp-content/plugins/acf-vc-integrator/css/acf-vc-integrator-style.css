@@ -1,0 +1,25 @@
+.vc_sw-align-right {
+    text-align: right;
+}
+.vc_sw-align-center {
+    text-align: center;
+}
+.vc_sw-align-justify {
+    text-align: justify;
+}
+.repeater-wrapper, .repeater-child-wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: table;
+}
+.reapeater-row {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: table-row;
+}
+.reapeter-column {
+    border: 1px solid #f1f1f1;
+    display: table-cell;
+}

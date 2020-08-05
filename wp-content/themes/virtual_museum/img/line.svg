@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="107.77" height="3" viewBox="0 0 107.77 3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #8b7034;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <title>line</title>
+  <g id="Ebene_2" data-name="Ebene 2">
+    <g id="Ebene_1-2" data-name="Ebene 1">
+      <line class="cls-1" y1="1.5" x2="107.77" y2="1.5"/>
+    </g>
+  </g>
+</svg>

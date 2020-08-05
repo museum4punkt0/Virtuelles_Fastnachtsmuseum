@@ -1,0 +1,96 @@
+.layout.with-left-sidebar {
+    .sidebar {
+        padding-right: 20px;
+        
+        .menu-vertical-wrapper {
+            z-index: 9999!important;
+            .menu-vertical {
+                margin: 0 0 30px;
+                padding: 0;
+                color: #333;
+                font-weight: 300;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    a {
+                        padding-left: 40px;
+                    }
+                }
+                &, ul {
+                    line-height: 40px;
+                    list-style-type: none;
+                }
+                &, a:hover {
+                    background-color: #f6f7f8;
+                }
+                li {
+                    & > ul {
+                        display: none;
+                    }
+                    &.selected > a {
+                        color: #28c;
+                    }
+                    &.selected > ul {
+                        display: block;
+                    }
+                    .expand {
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 40px;
+                        text-align: center;
+                        cursor: pointer;
+                        &:before {
+                            content: '+';
+                            position: absolute;
+                            right: 15px;
+                            color: #808488;
+                            &:hover {
+                                color: #333;
+                            }
+                        }
+                    }
+                }
+                
+                li.has-children  {
+                    position: relative;
+                    > a {
+                        padding-right: 40px;
+                    }
+                    
+                    li.has-children ul {
+                        a {
+                            padding-left: 60px;
+                        }
+                    }
+                    
+                    &.selected {
+                        > .expand {
+                            &:before {
+                                content: '—';
+                                color: #28c;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                    padding: 0 15px 0 20px;
+                    display: block;
+                    font-size: 14px;
+                    line-height: inherit;
+                    border-radius: 3px;
+                    border-bottom: 1px solid #eaedf1;
+                    -webkit-transition: background-color .25s ease;
+                    -moz-transition: background-color .25s ease;
+                    -ms-transition: background-color .25s ease;
+                    -o-transition: background-color .25s ease;
+                    transition: background-color .25s ease;
+                }
+            }
+        }
+    }
+}

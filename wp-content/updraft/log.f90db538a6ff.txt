@@ -1,0 +1,272 @@
+0000.000 (0) Opened log file at time: Thu, 26 Apr 2018 12:02:48 +0000 on http://localhost/wordpress
+0000.003 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.7 WP: 4.7.10 PHP: 7.1.4 (apache2handler, Windows NT DESKTOP-IRQPKQJ 10.0 build 16299 (Windows 10) i586) MySQL: 5.5.5 WPLANG: de_DE Server: Apache/2.4.25 (Win32) OpenSSL/1.0.2j PHP/7.1.4 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 31.9M | 2M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.006 (0) Free space on disk containing Updraft's temporary directory: 15696.7 MB
+0000.010 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.018 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.031 (0) Set semaphore last lock (fd) time to 2018-04-26 12:02:48
+0000.038 (0) Semaphore lock (fd) complete
+0000.061 (0) Backup run: resumption=0, nonce=f90db538a6ff, begun at=1524744168 (0s ago), job type=backup
+0000.069 (0) Scheduling a resumption (1) after 300 seconds (1524744468) in case this run gets aborted
+0000.092 (0) Checking if we have a zip executable available
+0000.099 (0) Creation of backups of directories: beginning
+0000.110 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0002.690 (0) Total entities for the zip file: 983 directories, 5969 files (0 skipped as non-modified), 95.4 MB
+0002.721 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0002.795 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 100 files added (on-disk size: 179.8 KB)
+0002.833 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 200 files added (on-disk size: 179.8 KB)
+0002.870 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 300 files added (on-disk size: 179.8 KB)
+0002.908 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 400 files added (on-disk size: 179.8 KB)
+0002.948 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 500 files added (on-disk size: 179.8 KB)
+0002.953 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (11 MB, 5969 files batched, 501 (502) added so far); re-opening (prior size: 179.8 KB)
+0004.017 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 600 files added (on-disk size: 6284.3 KB)
+0004.059 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 700 files added (on-disk size: 6284.3 KB)
+0004.095 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 800 files added (on-disk size: 6284.3 KB)
+0004.166 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 900 files added (on-disk size: 6284.3 KB)
+0004.202 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 1000 files added (on-disk size: 6284.3 KB)
+0004.207 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.4 MB, 5969 files batched, 501 (1003) added so far); re-opening (prior size: 6284.3 KB)
+0005.383 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 1100 files added (on-disk size: 9840 KB)
+0005.421 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 1200 files added (on-disk size: 9840 KB)
+0005.462 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 1300 files added (on-disk size: 9840 KB)
+0005.503 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 1400 files added (on-disk size: 9840 KB)
+0005.571 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 1500 files added (on-disk size: 9840 KB)
+0005.575 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.4 MB, 5969 files batched, 501 (1504) added so far); re-opening (prior size: 9840 KB)
+0006.278 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 1600 files added (on-disk size: 10944.3 KB)
+0006.313 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 1700 files added (on-disk size: 10944.3 KB)
+0006.350 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 1800 files added (on-disk size: 10944.3 KB)
+0006.385 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 1900 files added (on-disk size: 10944.3 KB)
+0006.449 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 2000 files added (on-disk size: 10944.3 KB)
+0006.474 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.5 MB, 5969 files batched, 501 (2005) added so far); re-opening (prior size: 10944.3 KB)
+0007.304 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 2100 files added (on-disk size: 12992.9 KB)
+0007.340 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 2200 files added (on-disk size: 12992.9 KB)
+0007.377 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 2300 files added (on-disk size: 12992.9 KB)
+0007.444 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 2400 files added (on-disk size: 12992.9 KB)
+0007.482 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 2500 files added (on-disk size: 12992.9 KB)
+0007.488 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5.9 MB, 5969 files batched, 501 (2506) added so far); re-opening (prior size: 12992.9 KB)
+0008.406 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 2600 files added (on-disk size: 15304.8 KB)
+0008.447 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 2700 files added (on-disk size: 15304.8 KB)
+0008.491 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 2800 files added (on-disk size: 15304.8 KB)
+0008.537 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 2900 files added (on-disk size: 15304.8 KB)
+0008.579 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 3000 files added (on-disk size: 15304.8 KB)
+0008.585 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.1 MB, 5969 files batched, 501 (3007) added so far); re-opening (prior size: 15304.8 KB)
+0009.435 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 3100 files added (on-disk size: 19759 KB)
+0009.472 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 3200 files added (on-disk size: 19759 KB)
+0009.510 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 3300 files added (on-disk size: 19759 KB)
+0009.550 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 3400 files added (on-disk size: 19759 KB)
+0009.590 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 3500 files added (on-disk size: 19759 KB)
+0009.597 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.6 MB, 5969 files batched, 501 (3508) added so far); re-opening (prior size: 19759 KB)
+0010.799 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 3600 files added (on-disk size: 21580.4 KB)
+0010.840 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 3700 files added (on-disk size: 21580.4 KB)
+0010.879 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 3800 files added (on-disk size: 21580.4 KB)
+0010.926 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 3900 files added (on-disk size: 21580.4 KB)
+0010.966 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 4000 files added (on-disk size: 21580.4 KB)
+0010.971 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7.6 MB, 5969 files batched, 501 (4009) added so far); re-opening (prior size: 21580.4 KB)
+0012.351 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 4100 files added (on-disk size: 24453 KB)
+0012.386 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 4200 files added (on-disk size: 24453 KB)
+0012.424 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 4300 files added (on-disk size: 24453 KB)
+0012.464 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 4400 files added (on-disk size: 24453 KB)
+0012.499 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 4500 files added (on-disk size: 24453 KB)
+0012.506 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (12.1 MB, 5969 files batched, 501 (4510) added so far); re-opening (prior size: 24453 KB)
+0013.712 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 4600 files added (on-disk size: 30781.5 KB)
+0013.752 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 4700 files added (on-disk size: 30781.5 KB)
+0013.800 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 4800 files added (on-disk size: 30781.5 KB)
+0013.845 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 4900 files added (on-disk size: 30781.5 KB)
+0013.884 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 5000 files added (on-disk size: 30781.5 KB)
+0013.892 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (13.3 MB, 5969 files batched, 501 (5011) added so far); re-opening (prior size: 30781.5 KB)
+0015.989 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 5100 files added (on-disk size: 34587.3 KB)
+0016.058 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 5200 files added (on-disk size: 34587.3 KB)
+0016.097 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 5300 files added (on-disk size: 34587.3 KB)
+0016.141 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 5400 files added (on-disk size: 34587.3 KB)
+0016.197 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 5500 files added (on-disk size: 34587.3 KB)
+0016.207 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.3 MB, 5969 files batched, 501 (5512) added so far); re-opening (prior size: 34587.3 KB)
+0017.021 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 5600 files added (on-disk size: 35348.5 KB)
+0017.058 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 5700 files added (on-disk size: 35348.5 KB)
+0017.100 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 5800 files added (on-disk size: 35348.5 KB)
+0017.137 (0) Zip: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip.tmp: 5900 files added (on-disk size: 35348.5 KB)
+0018.518 (0) Created plugins zip (0) - 37987.6 KB in 18.4 s (2064.2 KB/s) (sha1: df323fa339c9eb2dc249e9e006b8219030d6c431, sha256: 6cea33975c303c2eb320f63659801c0483227821118dbbdd87ab21ff6f8f843c)
+0018.535 (0) No backup of themes: excluded by user's options
+0018.538 (0) No backup of uploads: excluded by user's options
+0018.540 (0) No backup of others: excluded by user's options
+0018.550 (0) Saving backup status to database (elements: 2)
+0018.556 (0) Beginning creation of database dump (WordPress DB)
+0018.620 (0) Table wp_options: Total expected rows (approximate): 296
+0018.646 (0) Table wp_options: Total rows added: 299 in 0.02 seconds
+0018.650 (0) Table wp_options: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_options.table.gz - 87.2 KB)
+0018.671 (0) Table wp_users: Total expected rows (approximate): 0
+0018.678 (0) Table wp_users: Total rows added: 2 in 0.00 seconds
+0018.683 (0) Table wp_users: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_users.table.gz - 0.6 KB)
+0018.697 (0) Table wp_usermeta: Total expected rows (approximate): 50
+0018.705 (0) Table wp_usermeta: Total rows added: 52 in 0.00 seconds
+0018.710 (0) Table wp_usermeta: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_usermeta.table.gz - 1.8 KB)
+0018.721 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0018.728 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0018.732 (0) Table wp_commentmeta: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0018.744 (0) Table wp_comments: Total expected rows (approximate): 2
+0018.750 (0) Table wp_comments: Total rows added: 2 in 0.00 seconds
+0018.754 (0) Table wp_comments: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_comments.table.gz - 0.9 KB)
+0018.764 (0) Table wp_links: Total expected rows (approximate): 0
+0018.781 (0) Table wp_links: Total rows added: 0 in 0.01 seconds
+0018.788 (0) Table wp_links: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_links.table.gz - 0.4 KB)
+0018.816 (0) Table wp_postmeta: Total expected rows (approximate): 22525
+0019.443 (0) Table wp_postmeta: Total rows added: 25228 in 0.62 seconds
+0019.450 (0) Table wp_postmeta: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_postmeta.table.gz - 183.5 KB)
+0019.466 (0) Table wp_posts: Total expected rows (approximate): 523
+0019.503 (0) Table wp_posts: Total rows added: 540 in 0.03 seconds
+0019.538 (0) Table wp_posts: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_posts.table.gz - 36.9 KB)
+0019.552 (0) Table wp_signups: Total expected rows (approximate): 0
+0019.560 (0) Table wp_signups: Total rows added: 0 in 0.00 seconds
+0019.564 (0) Table wp_signups: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_signups.table.gz - 0.5 KB)
+0019.578 (0) Table wp_term_relationships: Total expected rows (approximate): 85
+0019.586 (0) Table wp_term_relationships: Total rows added: 85 in 0.00 seconds
+0019.590 (0) Table wp_term_relationships: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_term_relationships.table.gz - 0.6 KB)
+0019.601 (0) Table wp_term_taxonomy: Total expected rows (approximate): 42
+0019.611 (0) Table wp_term_taxonomy: Total rows added: 45 in 0.01 seconds
+0019.617 (0) Table wp_term_taxonomy: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_term_taxonomy.table.gz - 1.1 KB)
+0019.634 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0019.642 (0) Table wp_termmeta: Total rows added: 1 in 0.00 seconds
+0019.647 (0) Table wp_termmeta: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_termmeta.table.gz - 0.4 KB)
+0019.662 (0) Table wp_terms: Total expected rows (approximate): 41
+0019.671 (0) Table wp_terms: Total rows added: 45 in 0.01 seconds
+0019.676 (0) Table wp_terms: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_terms.table.gz - 1 KB)
+0019.693 (0) Table wp_bp_activity: Total expected rows (approximate): 1
+0019.702 (0) Table wp_bp_activity: Total rows added: 1 in 0.01 seconds
+0019.707 (0) Table wp_bp_activity: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_activity.table.gz - 0.6 KB)
+0019.720 (0) Table wp_bp_activity_meta: Total expected rows (approximate): 0
+0019.727 (0) Table wp_bp_activity_meta: Total rows added: 0 in 0.01 seconds
+0019.730 (0) Table wp_bp_activity_meta: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_activity_meta.table.gz - 0.3 KB)
+0019.747 (0) Table wp_bp_friends: Total expected rows (approximate): 0
+0019.781 (0) Table wp_bp_friends: Total rows added: 0 in 0.01 seconds
+0019.785 (0) Table wp_bp_friends: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_friends.table.gz - 0.4 KB)
+0019.824 (0) Table wp_bp_notifications: Total expected rows (approximate): 0
+0019.836 (0) Table wp_bp_notifications: Total rows added: 0 in 0.01 seconds
+0019.841 (0) Table wp_bp_notifications: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_notifications.table.gz - 0.4 KB)
+0019.857 (0) Table wp_bp_notifications_meta: Total expected rows (approximate): 0
+0019.865 (0) Table wp_bp_notifications_meta: Total rows added: 0 in 0.00 seconds
+0019.869 (0) Table wp_bp_notifications_meta: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_notifications_meta.table.gz - 0.4 KB)
+0019.884 (0) Table wp_bp_xprofile_data: Total expected rows (approximate): 0
+0019.893 (0) Table wp_bp_xprofile_data: Total rows added: 1 in 0.00 seconds
+0019.897 (0) Table wp_bp_xprofile_data: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_xprofile_data.table.gz - 0.4 KB)
+0019.909 (0) Table wp_bp_xprofile_fields: Total expected rows (approximate): 0
+0019.916 (0) Table wp_bp_xprofile_fields: Total rows added: 2 in 0.00 seconds
+0019.918 (0) Table wp_bp_xprofile_fields: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_xprofile_fields.table.gz - 0.5 KB)
+0019.928 (0) Table wp_bp_xprofile_groups: Total expected rows (approximate): 0
+0019.936 (0) Table wp_bp_xprofile_groups: Total rows added: 1 in 0.00 seconds
+0019.940 (0) Table wp_bp_xprofile_groups: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_xprofile_groups.table.gz - 0.4 KB)
+0019.951 (0) Table wp_bp_xprofile_meta: Total expected rows (approximate): 2
+0019.957 (0) Table wp_bp_xprofile_meta: Total rows added: 3 in 0.00 seconds
+0019.960 (0) Table wp_bp_xprofile_meta: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_xprofile_meta.table.gz - 0.5 KB)
+0019.973 (0) Table wp_crellyslider_elements: Total expected rows (approximate): 0
+0019.981 (0) Table wp_crellyslider_elements: Total rows added: 0 in 0.00 seconds
+0019.986 (0) Table wp_crellyslider_elements: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_crellyslider_elements.table.gz - 0.5 KB)
+0020.001 (0) Table wp_crellyslider_sliders: Total expected rows (approximate): 0
+0020.010 (0) Table wp_crellyslider_sliders: Total rows added: 1 in 0.01 seconds
+0020.014 (0) Table wp_crellyslider_sliders: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_crellyslider_sliders.table.gz - 0.5 KB)
+0020.027 (0) Table wp_crellyslider_slides: Total expected rows (approximate): 2
+0020.034 (0) Table wp_crellyslider_slides: Total rows added: 2 in 0.00 seconds
+0020.039 (0) Table wp_crellyslider_slides: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_crellyslider_slides.table.gz - 0.5 KB)
+0020.087 (0) Table wp_cvg_gallery: Total expected rows (approximate): 0
+0020.094 (0) Table wp_cvg_gallery: Total rows added: 1 in 0.01 seconds
+0020.097 (0) Table wp_cvg_gallery: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_cvg_gallery.table.gz - 0.4 KB)
+0020.114 (0) Table wp_cvg_videos: Total expected rows (approximate): 0
+0020.122 (0) Table wp_cvg_videos: Total rows added: 0 in 0.01 seconds
+0020.125 (0) Table wp_cvg_videos: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_cvg_videos.table.gz - 0.4 KB)
+0020.137 (0) Table wp_totalsoft_fonts: Total expected rows (approximate): 125
+0020.144 (0) Table wp_totalsoft_fonts: Total rows added: 125 in 0.00 seconds
+0020.148 (0) Table wp_totalsoft_fonts: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_fonts.table.gz - 1.4 KB)
+0020.167 (0) Table wp_totalsoft_galleryv_check: Total expected rows (approximate): 0
+0020.176 (0) Table wp_totalsoft_galleryv_check: Total rows added: 1 in 0.01 seconds
+0020.180 (0) Table wp_totalsoft_galleryv_check: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_check.table.gz - 0.3 KB)
+0020.192 (0) Table wp_totalsoft_galleryv_dbt: Total expected rows (approximate): 18
+0020.200 (0) Table wp_totalsoft_galleryv_dbt: Total rows added: 18 in 0.00 seconds
+0020.203 (0) Table wp_totalsoft_galleryv_dbt: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_dbt.table.gz - 0.5 KB)
+0020.216 (0) Table wp_totalsoft_galleryv_dbt_1: Total expected rows (approximate): 18
+0020.225 (0) Table wp_totalsoft_galleryv_dbt_1: Total rows added: 18 in 0.01 seconds
+0020.228 (0) Table wp_totalsoft_galleryv_dbt_1: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_dbt_1.table.gz - 2.1 KB)
+0020.280 (0) Table wp_totalsoft_galleryv_dbt_2: Total expected rows (approximate): 18
+0020.288 (0) Table wp_totalsoft_galleryv_dbt_2: Total rows added: 18 in 0.01 seconds
+0020.291 (0) Table wp_totalsoft_galleryv_dbt_2: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_dbt_2.table.gz - 1.6 KB)
+0020.302 (0) Table wp_totalsoft_galleryv_id: Total expected rows (approximate): 0
+0020.310 (0) Table wp_totalsoft_galleryv_id: Total rows added: 1 in 0.01 seconds
+0020.316 (0) Table wp_totalsoft_galleryv_id: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_id.table.gz - 0.3 KB)
+0020.326 (0) Table wp_totalsoft_galleryv_manager: Total expected rows (approximate): 0
+0020.332 (0) Table wp_totalsoft_galleryv_manager: Total rows added: 1 in 0.00 seconds
+0020.335 (0) Table wp_totalsoft_galleryv_manager: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_manager.table.gz - 0.4 KB)
+0020.347 (0) Table wp_totalsoft_galleryv_videos: Total expected rows (approximate): 4
+0020.354 (0) Table wp_totalsoft_galleryv_videos: Total rows added: 4 in 0.00 seconds
+0020.357 (0) Table wp_totalsoft_galleryv_videos: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_videos.table.gz - 0.7 KB)
+0020.376 (0) Table wp_totalsoft_new_plugin: Total expected rows (approximate): 2
+0020.394 (0) Table wp_totalsoft_new_plugin: Total rows added: 2 in 0.01 seconds
+0020.399 (0) Table wp_totalsoft_new_plugin: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_new_plugin.table.gz - 0.4 KB)
+0020.410 (0) Table wp_wfu_dbxqueue: Total expected rows (approximate): 0
+0020.416 (0) Table wp_wfu_dbxqueue: Total rows added: 0 in 0.00 seconds
+0020.419 (0) Table wp_wfu_dbxqueue: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_wfu_dbxqueue.table.gz - 0.3 KB)
+0020.434 (0) Table wp_wfu_log: Total expected rows (approximate): 2
+0020.446 (0) Table wp_wfu_log: Total rows added: 2 in 0.01 seconds
+0020.450 (0) Table wp_wfu_log: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_wfu_log.table.gz - 0.6 KB)
+0020.463 (0) Table wp_wfu_userdata: Total expected rows (approximate): 0
+0020.472 (0) Table wp_wfu_userdata: Total rows added: 0 in 0.01 seconds
+0020.477 (0) Table wp_wfu_userdata: finishing file (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_wfu_userdata.table.gz - 0.3 KB)
+0020.490 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_options.table.gz (1/39): adding to final database dump
+0020.538 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_users.table.gz (2/39): adding to final database dump
+0020.549 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_usermeta.table.gz (3/39): adding to final database dump
+0020.553 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_commentmeta.table.gz (4/39): adding to final database dump
+0020.557 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_comments.table.gz (5/39): adding to final database dump
+0020.561 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_links.table.gz (6/39): adding to final database dump
+0020.564 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_postmeta.table.gz (7/39): adding to final database dump
+0020.655 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_posts.table.gz (8/39): adding to final database dump
+0020.668 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_signups.table.gz (9/39): adding to final database dump
+0020.677 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_term_relationships.table.gz (10/39): adding to final database dump
+0020.680 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_term_taxonomy.table.gz (11/39): adding to final database dump
+0020.684 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_termmeta.table.gz (12/39): adding to final database dump
+0020.688 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_terms.table.gz (13/39): adding to final database dump
+0020.692 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_activity.table.gz (14/39): adding to final database dump
+0020.696 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_activity_meta.table.gz (15/39): adding to final database dump
+0020.701 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_friends.table.gz (16/39): adding to final database dump
+0020.705 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_notifications.table.gz (17/39): adding to final database dump
+0020.710 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_notifications_meta.table.gz (18/39): adding to final database dump
+0020.712 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_xprofile_data.table.gz (19/39): adding to final database dump
+0020.716 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_xprofile_fields.table.gz (20/39): adding to final database dump
+0020.721 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_xprofile_groups.table.gz (21/39): adding to final database dump
+0020.725 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_bp_xprofile_meta.table.gz (22/39): adding to final database dump
+0020.730 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_crellyslider_elements.table.gz (23/39): adding to final database dump
+0020.733 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_crellyslider_sliders.table.gz (24/39): adding to final database dump
+0020.735 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_crellyslider_slides.table.gz (25/39): adding to final database dump
+0020.737 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_cvg_gallery.table.gz (26/39): adding to final database dump
+0020.740 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_cvg_videos.table.gz (27/39): adding to final database dump
+0020.742 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_fonts.table.gz (28/39): adding to final database dump
+0020.745 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_check.table.gz (29/39): adding to final database dump
+0020.748 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_dbt.table.gz (30/39): adding to final database dump
+0020.750 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_dbt_1.table.gz (31/39): adding to final database dump
+0020.784 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_dbt_2.table.gz (32/39): adding to final database dump
+0020.787 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_id.table.gz (33/39): adding to final database dump
+0020.790 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_manager.table.gz (34/39): adding to final database dump
+0020.793 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_galleryv_videos.table.gz (35/39): adding to final database dump
+0020.795 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_totalsoft_new_plugin.table.gz (36/39): adding to final database dump
+0020.798 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_wfu_dbxqueue.table.gz (37/39): adding to final database dump
+0020.800 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_wfu_log.table.gz (38/39): adding to final database dump
+0020.803 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db-table-wp_wfu_userdata.table.gz (39/39): adding to final database dump
+0020.806 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db.gz: finished writing out complete database file (296 KB)
+0020.844 (0) Total database tables backed up: 39 (backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db.gz, size: 328027, sha256)
+0020.858 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0020.861 (0) backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db.gz: db: This file has not yet been successfully uploaded: will queue
+0020.864 (0) Saving backup history. Total backup size: 37.4 MB
+0020.871 (0) Requesting upload of the files that have not yet been successfully uploaded (2)
+0020.880 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0020.883 (0) No remote despatch: user chose no remote backup service
+0020.890 (0) Recording as successfully uploaded: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-plugins.zip (c287591fe979c403e62be7712b33d594)
+0020.905 (0) Recording as successfully uploaded: backup_2018-04-26-1402_Museum4punkt0Narrenschopf_f90db538a6ff-db.gz (b33c702107848abe7dc46908b0b6c540)
+0020.945 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0020.949 (0) Number of backup sets in history: 1; groups (db): 1
+0020.951 (0) Examining (for databases) backup set with group_id=0, nonce=f90db538a6ff, datestamp=1524744168 (Apr 26 2018 12:02:48)
+0020.953 (0) This backup set is the backup set just made, so will not be deleted.
+0020.953 (0) Number of backup sets in history: 1; groups (files): 1
+0020.956 (0) Examining (for files) backup set with nonce=f90db538a6ff, datestamp=1524744168 (Apr 26 2018 12:02:48)
+0020.956 (0) This backup set is the backup set just made, so will not be deleted.
+0020.958 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0020.960 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0020.964 (0) Resume backup (f90db538a6ff, 0): finish run
+0020.971 (0) Decremented the semaphore (fd) by 1
+0020.977 (0) Semaphore (fd) unlocked
+0020.980 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0020.986 (0) The backup apparently succeeded and is now complete
+0020.988 (0) No email will/can be sent - the user has not configured an email address.
+0020.990 (0) Die Sicherung war anscheinend erfolgreich und ist nun vollständig

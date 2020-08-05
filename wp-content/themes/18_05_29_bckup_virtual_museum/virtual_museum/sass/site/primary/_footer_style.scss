@@ -1,0 +1,71 @@
+.site-info{
+  position: relative;
+  text-align: center;
+}
+
+.social-media{
+  width:auto;
+  height:auto;
+  display:inline-block;
+  margin-bottom: 15px;
+}
+
+.sm_logo_container{
+  height: 60px;
+  width: 60px;
+  float:left;
+  border-radius:50%;
+  background-color: $color__blue_dark;
+  margin:5px 10px;
+  @include transition(all ease 0.5s);
+  @include box-shadow(inset 0px 0px 20px 3px rgba(0,0,0,0.8));
+}
+.sm_logo_container:hover {
+  background-color: lighten($color__blue_dark, 5%);
+  @include box-shadow(inset 0px 0px 10px 3px rgba(0,0,0,0.5));
+}
+.widget{
+  float:left;
+  text-align: left;
+  img{
+    float:left;
+  }
+}
+
+.footer_widget{
+  margin:20px;
+  //padding:20px;
+  //border-right: solid 2px $color__grey_light;
+}
+.vertical_line{
+  height: 50%;
+  width: 2px;
+  background-color: white;
+  position: absolute;
+  float: left;
+  right: 0;
+  top: 0;
+  transform: translateY(50%);
+}
+
+.widgettitle{
+  font-family: $font__main;
+  color: $color__blue_light;
+}
+
+.sm_logo{
+width: 100%;
+height: auto;
+}
+
+#colophon{
+  width: 100%;
+  height: auto;
+  background-color: $color__blue_dark;
+  border-top: solid 2px $color__link;
+  margin-top: 25px;
+  float: left;
+  position: relative;
+  padding:10px;
+  bottom: 0;
+  }

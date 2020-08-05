@@ -1,0 +1,44 @@
+.enumeration{
+  list-style: none;
+  float: left;
+  margin-top: 20px;
+  }
+
+.counter{
+  font-size: 2em;
+  width: auto;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+.counter p{
+  padding-right: 20px;
+  border-right: solid 1px $color__link;
+}
+
+.enum_text{
+
+}
+
+.todo-list{
+  margin: 20px 0 0 0;
+  :nth-child(even){
+    margin-left: 30px;
+  }
+}
+
+.info-textblock{
+  margin: 1.5em;
+}
+
+.InfoTextGroup{
+    width: 100%;
+    height: auto;
+    margin: 2em 0 2em 0;
+}
+
+.InfoBlockWrapper{
+
+  width: 100%;
+  float: left;
+}

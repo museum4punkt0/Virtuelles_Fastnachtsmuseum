@@ -1,0 +1,48 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.EditorContentWrapper{
+	width: 100%;
+	height: auto;
+
+}
+.site{
+float:left;
+width: 100%;
+height: auto;
+}
+.site-content{
+	float: left;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top:62px;
+}
+main{
+	width: 100%;
+	height: auto;
+	float: left;
+}
+.entry-footer{
+	margin-bottom:50px;
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Ajax Multi Upload for WordPress - Documentation</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link type="text/css" rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+	<div class="mainSection">
+		<div class="header"></div>
+		<div class="center floatContent">
+			<div class="content">
+				<div class="projectTitle">Ajax Multi Upload for WordPress</div>
+				<div class="contentHeader"><a name="about"></a>About</div>
+				Ajax Multi Upload is a WordPress plugin based on jQuery with following features:
+				<ul type="square">
+					<li>upload single or multiple file via ajax,</li>
+					<li>resize image,</li>
+					<li>create image thumbnail (with keep image aspect ratio),</li>
+					<li>uploads files into WordPress gallery, so they can be managed,</li>
+					<li>easy integrate with forms,</li>
+					<li>submitting form using ajax,</li>
+					<li>create any numbers of thumbnails under one upload,</li>
+					<li>customizable crop parameter for thumbnails,</li>
+					<li>customizable thumbnails sizes and dimensions,</li>
+					<li>pass custom data,</li>
+					<li>files extension filters,</li>
+					<li>limit uploaded file size,</li>
+					<li>limit number of uploaded files,</li>
+					<li>auto upload, upload on click the button, upload on form submit</li>
+					<li>custom upload button,</li>
+					<li>upload statistics,</li>
+					<li>and more...</li>
+				</ul>
+				<div class="contentHeader"><a name="implementation"></a>Implementation</div>
+				Implementation requires to write shortcode with appropiate parameters (<a href="#available_parameters" title="Available parameters">available parameters</a>). For example:
+				<pre class="code">&#91;ajax_multi_upload startOn='auto' multi='true' maxSize='204800'&#93;</pre>
+				If you want to have just simple uploader with default parameters you can use shortcode without parameters:
+				<pre class="code">&#91;ajax_multi_upload&#93;</pre>
+				There is also another way to implement Ajax Multi Upload. If you can't use shortcode on some part of your page or in some other plugin, you can try to use this method:
+				<pre class="code">&#91;ajax_multi_upload scriptsonly='true'&#93;
+&lt;input type='file' class='AMU' uploadScript='wp-content/plugins/ajax_multi_upload/upload.php' startOn='auto' multi='true' maxSize='204800' afterUpload='link' /&gt;</pre>
+				At first you've got to use shortcode with scriptsonly attribute: [ajax_multi_upload scriptsonly='true'], then in any place on your page, you can place &lt;input type='file ... /&gt; with some parameters. Required parameters: class='AMU', uploadScript='pathToYourUploadScript', multi and startOn.
+				<div class="contentHeader"><a name="available_parameters"></a>Available parameters</div>
+				There is some parameters that can defined behaviour of uploader. They can be used in [ajax_multi_upload] shortcode.<br /><br />
+				<table cellspacing="1px;" cellpadding="0px;" class="documentation">
+				<tr>
+					<th>Parameter</th>
+					<th style="width: 100px;">Default value</th>
+					<th style="width: 100px;">Possible values</th>
+					<th>Description</th>
+				</tr>
+				<!--<tr>
+					<td>path</td>
+					<td>files/</td>
+					<td>-</td>
+					<td>The path to the folder in which you would like to save the files. End's with '/'</td>
+				</tr>-->
+				<tr>
+					<td>startOn</td>
+					<td>manually</td>
+					<td>auto<br />manually<br />onSubmit:<i>formId</i></td>
+					<td>If set to auto, files will be uploaded on select.<br />If set to manually, files will be uploaded after click on upload button.<br />If set to onSubmit, files will be uploaded when the form with given id (after ':') will be submitted.</td>
+				</tr>
+				<tr>
+					<td>saveData</td>
+					<td>true</td>
+					<td>true<br />false</td>
+					<td>If parameter <em>startOn</em> is set to onSubmit:<i>formId</i>, then you can choose with <em>saveData</em> parameter if form data will be saved and available in admin area as custom post type.</td>
+				</tr>
+				<tr>
+					<td>postType</td>
+					<td>amu_submission</td>
+					<td>amu_submission<br />post</td>
+					<td>If parameter <em>startOn</em> is set to onSubmit:<i>formId</i> and <em>saveData</em> parameter is set to <em>true</em>, then you can choose post type for saved data.</td>
+				</tr>
+				<tr>
+					<td>attachImages</td>
+					<td>currentPost</td>
+					<td>currentPost<br />formSubmission</td>
+					<td>Specify if uploaded images will be attached to current post or to form submission custom post set by <em>postType</em> parameter.</td>
+				</tr>
+				<tr>
+					<td>sendEmail</td>
+					<td>false</td>
+					<td>false<br />true</td>
+					<td>Specify if an email will be send after form submission. You can configure email template under <em>Upload Submissions->Email template</em></td>
+				</tr>
+				<tr>
+					<td>requiredFields</td>
+					<td></td>
+					<td></td>
+					<td>If parameter <em>startOn</em> is set to onSubmit:<i>formId</i>, then you can choose required form fields with this parameter. Example:<pre style='white-space: normal;'>[ajax_multi_upload startOn='onSubmit:form' requiredFields='title,content' saveData='true' attachImages='formSubmission' filesLimit='2' multi='true' afterUpload='filename']</pre></td>
+				</tr>
+				
+				<tr>
+					<td>ajax</td>
+					<td>false</td>
+					<td>true<br />false</td>
+					<td>
+						Can be used only, if <i>startOn</i> is set to <i>onSubmit:formId</i>. When <i>ajax</i> is set to <i>true</i>, form data will be send via ajax to script specified in form action parameter, using method (post or get) specified in form method parameter.
+					</td>
+				</tr>
+				<tr>
+					<td>ajaxInfoId</td>
+					<td>-</td>
+					<td>-</td>
+					<td>
+						Can be used only, if <i>ajax</i> is set to <i>true</i>. Specified html node id where information outputted by script specified in form action parameter will be placed. So for example if you place in your php script (which submitted form) echo $message; the message will be placed in html node with <i>ajaxInfoId</i> id parameter.
+					</td>
+				</tr>
+				<tr>
+					<td>ajaxLoaderId</td>
+					<td>-</td>
+					<td>-</td>
+					<td>
+						Can be used only, if <i>ajax</i> is set to <i>true</i>. Specified html node id which contains loader graphic. This node will be show before sending ajax request and will be hidden after getting response. Sample loader node can look like this:
+						&lt;span class="amu_loader" id="loader"&gt;<br />
+							&nbsp;&nbsp;&nbsp;&lt;img src='wp-content/plugins/ajax_multi_upload/ajax-loader.gif'/&gt;<br />
+						&lt;/span&gt;<br />
+						To make it work use <i>ajaxLoaderId='loader'</i>
+					</td>
+				</tr>
+				<tr>
+					<td>buttonCaption</td>
+					<td>Upload</td>
+					<td>-</td>
+					<td>Upload button caption. Specify just if you use startOn="manually"</td>
+				</tr>
+				<tr>
+					<td>multi</td>
+					<td>false</td>
+					<td>true<br />false</td>
+					<td><i>true</i> - multiple file uploads,<br /><i>false</i> - one file upload</td>
+				</tr>
+				<tr>
+					<td>afterUpload</td>
+					<td>link</td>
+					<td>image<br />link<br />filename<br /><i>custom text</i></td>
+					<td>
+						Specified what's appears after upload.<br />
+						image - preview of uploaded file will be displayed,<br />
+						link - link to the uploaded file will be displayed,<br />
+						filename - the name of the uploaded file will be displayed,<br />
+						<i>custom text</i> - your custom text will be displayed (for example afterUpload="Upload complete!")<br />
+						If you specify <i>custom text</i>, you can use predefined variables to display some statistics:<br />
+						<ul>
+							<li>AMUfilesUploaded - number of uploaded files</li>
+							<li>AMUerrors - number of occured errors</li>
+							<li>AMUtotalSizeB - total size of all uploaded files in bytes</li>
+							<li>AMUtotalSizeKB - total size of all uploaded files in kilobytes</li>
+							<li>AMUtotalSizeMB - total size of all uploaded files in megabytes</li>
+							<li>AMUtotalSizeGB - total size of all uploaded files in gigabytes</li>
+							<li>AMUspeedB - avarage upload speed in bytes per second</li>
+							<li>AMUspeedKB - avarage upload speed in kilobytes per second</li>
+							<li>AMUspeedMB - avarage upload speed in megabytes per second</li>
+							<li>AMUspeedGB - avarage upload speed in gigabytes per second</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>onprogress</td>
+					<td>percentage</td>
+					<td>percentage<br />speed</td>
+					<td>Specified type of information displayed when file is uploaded.<br /><i>percentage</i> - displayed percentage part of uploaded file,<br /> <i>speed</i> - displayed avarage speed of upload in kB/s
+					</td>
+				</tr>
+				<tr>
+					<td>thumbnails</td>
+					<td>-</td>
+					<td>-</td>
+					<td>Dimension or dimensions of thumbnails that will be generated (in pixels).<br />For example if you want to generate a 90x90 thumbnail use thumbnails="90x90".<br />If you want to generate 3 thumbnails (first - 90x90, second - width 100px, heigth - keep aspect ratio, third - height 200px, width - keep aspect ratio) use thumbnails="90x90,100x,x200".</td>
+				</tr>
+				<tr>
+					<td>thumbnailsCrop</td>
+					<td>false</td>
+					<td>false<br />true</td>
+					<td>Specifies if thumbnails should be cropped. false - Soft proportional crop mode. true - Hard crop mode.</td>
+				</tr>
+				<tr>
+					<td>fileExt</td>
+					<td>-</td>
+					<td>-</td>
+					<td>
+						List of allowed file extensions, eg. fileExt="jpg,png,gif".<br />
+						<i>Notice:</i> If you're using this parameter, you should also specify fileDesc parameter.
+					</td>
+				</tr>
+				<tr>
+					<td>fileDesc</td>
+					<td>-</td>
+					<td>-</td>
+					<td>
+						The text that will appear at the bottom of the browse dialog box, eg. fileDesc="Images (jpg, png, gif)".
+					</td>
+				</tr>
+				<tr>
+					<td>thumbnailsAfterUpload</td>
+					<td>-</td>
+					<td>image<br />link<br />filename<br /><i>custom text</i></td>
+					<td>
+						Specified what's appears after thumbnails generation.<br />
+						image - preview of thumbnail will be displayed,<br />
+						link - link to the thumbnail will be displayed,<br />
+						filename - the name of the thumbnail will be displayed,<br />
+						<i>custom text</i> - your custom text will be displayed.<br />
+						This parameter should be used like thumbnails parameter, for example (for 3 thumbnails) thumbnailsAfterUpload="link,image,Thumbnail created!".<br />
+						If you're not gonna specify this parameter, the thumbnails information/image will not be displayed.
+					</td>
+				</tr>
+				<tr>
+					<td>maxSize</td>
+					<td>-</td>
+					<td>-</td>
+					<td>The maximum upload file size in bytes.</td>
+				</tr>
+				<tr>
+					<td>hideButton</td>
+					<td>false</td>
+					<td>true<br />false</td>
+					<td>
+						Enable to hide the flash button so you can style the underlying div element from your custom css (by for example background: url('your_button.png') no-repeat; parameter).
+					</td>
+				</tr>
+				<tr>
+					<td>button</td>
+					<td>-</td>
+					<td>-</td>
+					<td>Path to custom upload button.</td>
+				</tr>
+				<tr>
+					<td>bwidth</td>
+					<td>120</td>
+					<td>-</td>
+					<td>Custom upload button width in pixels.</td>
+				</tr>
+				<tr>
+					<td>bheight</td>
+					<td>30</td>
+					<td>-</td>
+					<td>Custom upload button height in pixels.</td>
+				</tr>
+				<tr>
+					<td>buttonText</td>
+					<td>SELECT FILES</td>
+					<td>-</td>
+					<td>
+						Caption of browse files button.
+					</td>
+				</tr>
+				<tr>
+					<td>queueId</td>
+					<td>-</td>
+					<td>-</td>
+					<td>The id of the custom upload queue. You can use your own upload queue, rather than default queue. Just create own queue and specify it's id. The files will be show in your custom queue.</td>
+				</tr>
+				<tr>
+					<td>data</td>
+					<td>-</td>
+					<td>-</td>
+					<td>Custom data, that will be send to upload.php script. Data can be in json format or can contain jQuery dom element selectors from which value will be taken.<br />
+						For example data="'variable1':'value1', 'variable2':'value2', 'formInput':'selector:[name=firstInput]', 'otherInput':'selector:#someId'".
+					</td>
+				</tr>
+				<tr>
+					<td>method</td>
+					<td>post</td>
+					<td>post<br />get</td>
+					<td>
+						Specified the method used to send data to upload script. 
+					</td>
+				</tr>
+				<tr>
+					<td>filesLimit</td>
+					<td>-</td>
+					<td>-</td>
+					<td>Number value of maximum files that can be selected to upload.
+					</td>
+				</tr>
+				<tr>
+					<td>filesMin</td>
+					<td>-</td>
+					<td>-</td>
+					<td>Number value of minimum files required to be uploaded. Works with form integration onSubmit:<i>formId</i>
+					</td>
+				</tr>
+				<tr>
+					<td>allowRemove</td>
+					<td>false</td>
+					<td>true<br />false</td>
+					<td><i>true</i> - user can remove file after upload, <i>false</i> - user can't remove file after upload<br />
+					<!--<i>Notice:</i>If you set this parameter to <i>true</i> and using custom value of <i>path</i> parameter (different than "files/"), you've got to change default "files" folder value in upload.php file (lines 63, 64, 66) to your custom folder name/path.-->
+					</td>
+				</tr>
+				<tr>
+					<td>removeData</td>
+					<td>-</td>
+					<td>-</td>
+					<td>Custom data, that will be send using POST method to upload.php script, when user click on remove button (available when parameter allowRemove is set to true). Data can be in json format or can contain jQuery dom element selectors from which value will be taken.<br />
+						For example: data="'variable1':'value1', 'variable2':'value2', 'formInput':'selector:[name=firstInput]', 'otherInput':'selector:#someId'".
+					</td>
+				</tr>
+				<tr>
+					<td>sessionId</td>
+					<td>-</td>
+					<td>-</td>
+					<td>If you want to use session in upload.php scirpt, you've got to specify this parameter. For example sessionId="your_php_session_id".
+					</td>
+				</tr>
+				<tr>
+					<td>uploadScript</td>
+					<td>PLUGIN_DIRECTORY/upload.php</td>
+					<td>-</td>
+					<td>The path to upload script.
+					</td>
+				</tr>
+				<tr>
+					<td>wmode</td>
+					<td>transparent</td>
+					<td>-</td>
+					<td>Set's flash wmode parameter.
+					</td>
+				</tr>
+				<tr>
+					<td>packed</td>
+					<td>false</td>
+					<td>true<br />false</td>
+					<td>
+						If it's set to <i>true</i> upload.packed.js script will be attached to page. It contains upload.min.js, swfobject.js and myupload.js files which are packed and minified. If it's set to <i>false</i> mentioned files will be attached separately.
+					</td>
+				</tr>
+				<tr>
+					<td>scriptsOnly</td>
+					<td>false</td>
+					<td>true<br />false</td>
+					<td>
+						If it's set to <i>true</i> only scripts required for uploader will be loaded, but uploader won't be initialized and you gonna put it manually somewhere on your page: &lt;input type='file' class='AMU' ... /&gt; (check <a href="#implementation" title="Implementation">implementation</a> for more). If it's set to <i>false</i> all required scripts will be loaded and uploader will be initialized and displayed.
+					</td>
+				</tr>
+				</table>
+				<div class="contentHeader"><a name="form"></a>Form integration</div>
+				Example of how to integrate [ajax_multi_upload] shortcode with form:<pre style='overflow: auto;'>&lt;form id="form" action="" method="post"&gt;
+	&lt;div class="amu_info" id="info"&gt;&lt;/div&gt;
+	&lt;div&gt;Title:&lt;/div&gt;
+	&lt;input type="text" name="amu_title" /&gt;
+	&lt;div&gt;Category:&lt;/div&gt;
+	[amu_blog_categories_dropdown multiple='1']
+	&lt;div&gt;Add photos:&lt;/div&gt;
+	[ajax_multi_upload startOn='onSubmit:form' ajax='true' sendEmail='true' requiredFields='title,content' saveData='true' attachImages='formSubmission' filesLimit='2' multi='true' afterUpload='filename' fileExt='jpg,jpeg,png,gif' fileDesc='Images (*.jpg, *.jpeg, *.png, *.gif)' thumbnails='90x' thumbnailsCrop='false' thumbnailsAfterUpload='image' ajaxInfoId='info' ajaxLoaderId='loader' allowRemove='true' poststatus='publish']
+	&lt;div&gt;Content:&lt;/div&gt;
+	[amu_content_editor]
+	&lt;div&gt;Name:&lt;/div&gt;
+	&lt;input type="text" name="amu_name" /&gt;
+	&lt;div&gt;Surname:&lt;/div&gt;
+	&lt;input type="text" name="amu_surname" /&gt;
+	&lt;div&gt;Email:&lt;/div&gt;
+	&lt;input type="text" name="amu_email" /&gt;
+	&lt;div&gt;Website:&lt;/div&gt;
+	&lt;input type="text" name="amu_website" /&gt;
+	&lt;input type="submit" name="amu_submit" value="Submit" /&gt;
+	&lt;input type="hidden" name="amu_action" value="submit" /&gt;
+	&lt;span class="amu_loader" id="loader"&gt;
+		&lt;img src='/wp-content/plugins/ajax_multi_upload/ajax-loader.gif'/&gt;
+	&lt;/span&gt;
+&lt;/form&gt;</pre>There are additional shortcodes which may be helpful. Examples with default parameters: <pre>[amu_blog_categories_dropdown multiple='0' hide_empty='0']</pre>and<pre>[amu_content_editor media_buttons='0' tab_index='2' extended='0']</pre>
+				<div class="contentHeader"><a name="css"></a>CSS styles</div>
+				Ajax Multi Upload using one CSS file <i>style.css</i>. It includes classes that defining styles of upload queue, upload button, delete file button, etc.
+	<ul type="square">
+		<li>
+			After selecting the file/files upload queue will be created automatically (if <i>queueId</i> parameter is not specified). You can change its style using <i>.uploadifyQueue</i> class eg.
+			<pre class="code">
+.uploadifyQueue
+{
+	width: 625px;
+}</pre>
+		</li>
+		<li>
+			Items of the upload queue can be styled using <i>.uploadifyQueueItem</i> class eg.
+			<pre class="code">
+.uploadifyQueueItem
+{
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #D6D6D6;
+	background-color: #FFFFFF;
+	line-height: 17px !important;
+}</pre>
+		</li>
+		<li>
+			The upload button (if parameter <i>auto</i> is set to <i>false</i>) can be styled using <i>.uploadButton</i> class eg.
+			<pre class="code">
+.uploadButton
+{
+	width: 110px;
+	margin-top: 10px;
+}</pre>
+		</li>
+		<li>
+			The progress bar can be styled using two classes<i>.uploadifyProgress</i> and <i>.uploadifyProgressBar</i>class eg.
+			<pre class="code">
+.uploadifyProgress
+{
+	background-color: #FFFFFF;
+	border-color: #808080 #C5C5C5 #C5C5C5 #808080;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 10px;
+	width: 100%;
+}
+.uploadifyProgressBar
+{
+	background-color: #869FB7;
+	height: 3px;
+	width: 1px;
+}</pre>
+					</li>
+					<li>
+			The uploaded image and uploaded thumbnail can be styled using this classes<i>.uploadedImage</i>, <i>.uploadedThumbnail</i>, <i>.afterUploadThumbnail</i> class eg.
+			<pre class="code">
+.uploadedImage
+{
+	border: none;
+	max-width: 438px;
+}
+.uploadedThumbnail
+{
+	border: none;
+	max-width: 200px;
+}
+.afterUploadThumbnail
+{
+	display: block;
+}</pre>
+					</li>
+				</ul>
+				Please check style.css file for more.
+				<div class="contentHeader"><a name="examples"></a>Examples</div>
+				You can see working examples on <a href="http://quanticalabs.com/quanticawp/ajax-multi-upload/" title="Live preview">live preview page</a>. You can also check live preview page html code in livePreviewAMUWP.html file, which you can find in help folder.
+				<div class="contentHeader"><a name="support"></a>Support</div>
+				Support for all our items is conducted through our <a href="http://support.quanticalabs.com/forum">Support Forum</a>.<br/> 
+				Please register an account and search the forum or create a new topic, we&#039;ll answer as soon as possible.<br/><br/>
+				We&#039;re in GMT +1 and we aim to answer all questions within <b>24 hours</b> (Monday – Friday). In some cases the waiting time can be extended to <b>48 hours</b>.<br/>
+				Support requests sent during weekends or public holidays will be processed on next Monday or the next business day.
+			</div>
+			<div class="menu">
+				<a href="#about" class="menu">About</a>
+				<a href="#implementation" class="menu">Implementation</a>
+				<a href="#available_parameters" class="menu">Available parameters</a>
+				<a href="#form" class="menu">Form integration</a>
+				<a href="#css" class="menu">CSS styles</a>
+				<a href="#examples" class="menu">Examples</a>
+				<a href="#support" class="menu">Support</a>
+			</div>
+		<div class="footer"></div>
+	</div>
+	</body>
+</html>
